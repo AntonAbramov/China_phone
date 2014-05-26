@@ -9,10 +9,6 @@
 	<meta name="description" content=""/>
 	<link type="image/x-icon" rel="shortcut icon" href="favicon.ico"/>
 	<link rel="stylesheet" href="css/normalize.css" type="text/css" media="all"/>
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&subset=latin,cyrillic-ext'
-	      rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300&subset=cyrillic,latin' rel='stylesheet'
-	      type='text/css'>
 	<link rel="stylesheet" href="css/style.css" type="text/css" media="all"/>
 	<link rel="stylesheet" media="only screen and (min-width: 480px)" href="css/480.css">
 	<link rel="stylesheet" media="only screen and (min-width: 600px)" href="css/600.css">
@@ -24,15 +20,298 @@
 </head>
 <body>
 	<header class="header cf">
-		<a href="/" class="logo"></a>
-		<div class="search"></div>
-		<div class="call-back"></div>
-		<div class="cart"></div>
+		<a title="Kitaiskie telefoni" href="/" class="logo">
+			<img src="img/logo.png" alt="Kitaiskie telefoni"  />
+		</a>
+		<div class="search">
+			<input type="search" placeholder="Поиск"/>
+			<button class="btn gray"><i class="icon icons-search"></i></button>
+		</div>
+		<a href="tel://7-123-456-7700" class="call-back">
+			<i class="icon icons-tel"></i>
+			<span class="tel">+7 (123) 456-77-00</span>
+			<span class="text">Перезвоните</span>
+		</a>
+		<div class="cart not-empty">
+			<div class="cart-btn">
+				<i class="icon icons-cart">
+					<span class="amount">3</span>
+				</i>
+				В корзине пусто
+				<div class="cart-count-items">3 товара</div>
+			</div>
+			<div class="cart-entity">
+				<div class="redirect">
+					<a href="#">Перейти в корзину</a>
+				</div>
+				<table class="popup-cart-table">
+					<thead>
+						<tr>
+							<td class="item"></td>
+							<td class="price">ЦЕНА</td>
+							<td class="count">К-ВО</td>
+							<td class="total">Сумма</td>
+							<td class="close"></td>
+						</tr>
+
+					</thead>
+					<tbody>
+						<tr >
+							<td rowspan="2" class="item brd-b"><a href="#"><img src="img/small-pic.jpg" alt=""/></a></td>
+							<td colspan="3" class="name">Hero H9500+ A9600 MTK6589</td>
+							<td rowspan="2" class="close brd-b"><span class="icon icons-close" title="закрыть"></span></td>
+						</tr>
+						<tr>
+							<td class="price brd-b"><strong>9400.00</strong> руб. </td>
+							<td class="count brd-b">
+								<span class="min-js icon icons-arrow-small-left"></span>
+								<input maxlength="3" type="text"/>
+								<span class="plus-js icons-arrow-small-right icon"></span></td>
+							<td class="total brd-b"><strong>9400.00</strong> руб. </td>
+						</tr>
+						<tr >
+							<td rowspan="2" class="item brd-b"><a href="#"><img src="img/small-pic.jpg" alt=""/></a></td>
+							<td colspan="3" class="name">Hero H9500+ A9600 MTK6589</td>
+							<td rowspan="2" class="close brd-b"><span class="icon icons-close" title="закрыть"></span></td>
+						</tr>
+						<tr>
+							<td class="price brd-b"><strong>9400.00</strong> руб. </td>
+							<td class="count brd-b">
+								<span class="min-js icon icons-arrow-small-left"></span>
+								<input maxlength="3" type="text"/>
+								<span class="plus-js icons-arrow-small-right icon"></span></td>
+							<td class="total brd-b"><strong>9400.00</strong> руб. </td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="total-amount">
+					<span class="container">
+						<strong>Общая сумма: 25 600 </strong>руб.
+					</span>
+				</div>
+				<div class="bottom-buttons">
+					<a href="#" class="order-click">Заказ “в 1 клик”</a>
+					<a href="#" class="order">Оформить заказ</a>
+				</div>
+			</div>
+		</div>
 	</header>
+	<header class="header-mobile">
+		<div class="inn">
+			<div class="mobile-nav">
+				<nav>
+					<a href="#">test</a>
+					<a href="#">test</a>
+					<a href="#">test</a>
+				</nav>
+			</div>
+
+			<a href="#" class="icon icons-cart-active"><span class="amount">3</span></a>
+			<a class="logo" href="/"><img src="img/mobile-logo.png" alt=""/></a>
+		</div>
+		<div class="header-mid cf">
+			<div class="catalog"><a class="btn orange" href="#">каталог</a></div>
+			<div class="search">
+				<input type="search" placeholder="Поиск" />
+				<button class="btn gray"><i class="icon icons-search"></i></button>
+			</div>
+		</div>
+	</header>
+	<div class="main-inner">
+		<div class="top-menu">
+			<div class="catalog">
+				<button class="btn orange">каталог<i class="icon icons-arrow-bottom"></i></button>
+			</div>
+			<nav class="cf">
+				<a href="#">Доставка и оплата</a>
+				<a href="#">Гарантии</a>
+				<a href="#">Вопросы / Ответы</a>
+				<a href="#">Контакты</a>
+			</nav>
+		</div>
+		<div class="slider-holder">
+			<div class="slider">
+				<div class="slide1">
+					<img src="img/slide1.jpg" alt=""/>
+					<div class="text-container">
+						<div class="title">Slider Title</div>
+						<p class="text">Lorem ipsum dolor sit amet, adipiscing.
+	Aenean commodo ligula eget dolor.
+	Cum sociis natoque penatibus et magnis
+	montes, nascetur ridiculus mus. </p>
+					</div>
+				</div>
+					<div class="slide1">
+					<img src="img/slide1.jpg" alt=""/>
+					<div class="text-container">
+						<div class="title"></div>
+						<p class="text"></p>
+					</div>
+				</div>
+					<div class="slide1">
+					<img src="img/slide1.jpg" alt=""/>
+					<div class="text-container">
+						<div class="title"></div>
+						<p class="text"></p>
+					</div>
+				</div>
+				<div class="slide2"></div>
+			</div>
+		</div>
+		<div class="heading with-icon">
+			<i class="icon icons-popular"></i> 	<h1>ПОПУЛЯРНЫЕ ТОВАРЫ</h1>
+		</div>
+		<div class="products cf">
+			<div class="item percent10">
+				<a href="#" class="zoom"><i class="icon icons-zoom-inn"></i></a>
+				<a href="#" class="video"><i class="icon icons-video"></i></a>
+				<div class="preview">
+					<a href="#">
+						<img src="img/mobile-item.jpg" alt=""/>
+						<span class="name">Amoi N828 MTK6589</span>
+					</a>
+				</div>
+				<div class="price"><strong>8300.00</strong> руб.</div>
+				<div class="add-to-cart">
+						<button class="btn blue">В корзину</button>
+					</div>
+				<div class="description">
+					<div>
+						<strong>Первый защищенный восьмиядерный смартфон! </strong>
+					</div>
+					Android 4.2, 2SIM, аккумулятор на 3000 mAh, IPS-дисплей 4.3" защита IP68, ...
+				</div>
+			</div>
+			<div class="item percent10">
+				<a href="#" class="zoom"><i class="icon icons-zoom-inn"></i></a>
+				<a href="#" class="video"><i class="icon icons-video"></i></a>
+				<div class="preview">
+					<a href="#">
+						<img src="img/mid-pic1_1.jpg" alt=""/>
+						<span class="name">Amoi N828 MTK6589</span>
+					</a>
+				</div>
+				<div class="price"><strong>8300.00</strong> руб.</div>
+				<div class="add-to-cart">
+						<button class="btn blue">В корзину</button>
+					</div>
+				<div class="description">
+					<div>
+						<strong>Первый защищенный восьмиядерный смартфон! </strong>
+					</div>
+					Android 4.2, 2SIM, аккумулятор на 3000 mAh, IPS-дисплей 4.3" защита IP68, ...
+				</div>
+			</div>
+			<div class="item hit">
+				<a href="#" class="zoom"><i class="icon icons-zoom-inn"></i></a>
+				<a href="#" class="video"><i class="icon icons-video"></i></a>
+				<div class="preview">
+					<a href="#">
+						<img src="img/mobile-item.jpg" alt=""/>
+						<span class="name">Amoi N828 MTK6589</span>
+					</a>
+				</div>
+				<div class="price"><strong>8300.00</strong> руб.</div>
+				<div class="add-to-cart">
+						<button class="btn blue">В корзину</button>
+					</div>
+				<div class="description">
+					<div>
+						<strong>Первый защищенный восьмиядерный смартфон! </strong>
+					</div>
+					Android 4.2, 2SIM, аккумулятор на 3000 mAh, IPS-дисплей 4.3" защита IP68, ...
+				</div>
+			</div>
+			<div class="item new">
+				<div class="preview">
+					<a href="#">
+						<img src="img/mobile-item.jpg" alt=""/>
+						<span class="name">Amoi N828 MTK6589</span>
+					</a>
+				</div>
+				<div class="price"><strong>8300.00</strong> руб.</div>
+			</div>
+			<div class="item hit">
+				<div class="preview">
+					<a href="#">
+						<img src="img/mobile-item.jpg" alt=""/>
+						<span class="name">Amoi N828 MTK6589</span>
+					</a>
+				</div>
+				<div class="price"><strong>8300.00</strong> руб.</div>
+				<div class="add-to-cart">
+						<button class="btn blue">В корзину</button>
+					</div>
+				<div class="description">
+					<div>
+						<strong>Первый защищенный восьмиядерный смартфон! </strong>
+					</div>
+					Android 4.2, 2SIM, аккумулятор на 3000 mAh, IPS-дисплей 4.3" защита IP68, ...
+				</div>
+			</div>
+			<div class="item new">
+				<div class="preview">
+					<a href="#">
+						<img src="img/mobile-item.jpg" alt=""/>
+						<span class="name">Amoi N828 MTK6589</span>
+					</a>
+				</div>
+				<div class="price"><strong>8300.00</strong> руб.</div>
+			</div>
+		</div>
+	</div>
+	<footer class="footer">
+		<div class="copyright">
+			&copy; Китайские телефоны, 2014<br/>
+			Все права защищены.
+		</div>
+		<div class="map">
+			<a href="#">Карта сайта</a>
+		</div>
+		<div class="sosials">
+			<p>Следуйте за нами в социальных сетях:</p>
+			<ul>
+				<li>
+					<a href="#">
+						<i class="icon icons-youtube"></i>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="icon icons-tw"></i>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="icon icons-vk"></i>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="icon icons-mail"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+	</footer>
+	<footer class="footer-mobile">
+		<div class="following">
+			<p class="following-text">Следуйте за нами в социальных сетях:</p>
+			<ul class="sosial-list">
+				<li><a href="#"><i class="icon mobile-youtube"></i></a></li>
+				<li><a href="#"><i class="icon mobile-tw"></i></a></li>
+				<li><a href="#"><i class="icon mobile-vk"></i></a></li>
+				<li><a href="#"><i class="icon mobile-mail"></i></a></li>
+			</ul>
+		</div>
+		<div class="orange-button">
+			<a href="#" class="btn orange"><i class="icon mobile-cell"></i>+7 (123) 456-77-00</a>
+		</div>
+	</footer>
 	<script src="js/jquery-2.0.3.min.js"></script>
 	<script src="js/jquery.slides.min.js"></script>
 	<script src="js/mousewheel.js"></script>
-	<script src="js/init.js"></script>
 	<script src="js/init.js"></script>
 </body>
 </html>

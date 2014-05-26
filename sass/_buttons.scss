@@ -1,0 +1,51 @@
+.btn {
+	display:inline-block;
+	border-radius: 3px;
+	position: relative;
+	cursor: pointer;
+	&.gray {
+		border:1px solid #ccc;
+		background-color: #e5e7eb;
+		@include filter-gradient(#e5e7eb, #e5e7eb, vertical);
+		$experimental-support-for-svg: true;
+		@include background-image(linear-gradient(top, #e5e7eb 0%,#f9f9f9 86%,#e5e7eb 100%));
+	}
+	&.orange {
+		background-color: #ff9b51;
+		@include filter-gradient(#ff9b51, #f2781e, vertical);
+		$experimental-support-for-svg: true;
+		@include background-image(linear-gradient(top,  #ff9b51 0%,#efb932 4%,#f2781e 100%));
+		&:hover {
+			background-color: #ea7719;
+			@include filter-gradient(#ea7719, #f07716, vertical);
+			$experimental-support-for-svg: true;
+			@include background-image(linear-gradient(top,  #ea7719 0%,#efa42d 13%,#f07716 100%));
+		}
+		&:active {
+			background-color: #f0902c;
+			@include filter-gradient(#f0902c, #f0882c, vertical);
+			$experimental-support-for-svg: true;
+			@include background-image(linear-gradient(top,  #f0902c 0%,#efb22d 33%,#efb22d 33%,#efb02d 67%,#f0882c 100%));
+		}
+	}
+	&.blue {
+		border:2px solid #2b74c4;
+		border-radius: 5px;
+		background-color: #30abfc;
+		@include filter-gradient(#30abfc, #30abfc, vertical);
+		$experimental-support-for-svg: true;
+		@include background-image(linear-gradient(top,  #30abfc 0%,#00d3ff 4%,#00d3ff 50%,#30abfc 56%,#2989d8 56%,#30abfc 100%));
+		&:hover {
+			background-color: #558bc7;
+			@include filter-gradient(#558bc7, #558bc7, vertical);
+			$experimental-support-for-svg: true;
+			@include background-image(linear-gradient(top,  #558bc7 0%,#33aedb 4%,#558bc7 100%));
+		}
+		&:focus {
+			background-color: #30abfc;
+			@include filter-gradient(#30abfc, #00d3ff, vertical);
+			$experimental-support-for-svg: true;
+			@include background-image(linear-gradient(top,  #30abfc 0%,#00d3ff 100%));
+		}
+	}
+}

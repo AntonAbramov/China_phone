@@ -1,7 +1,9 @@
 @import "blueprint";
 @import "compass";
 @import "icons/*.png";
+@import "mobile/*.png";
 @include all-icons-sprites(true);
+@include all-mobile-sprites(true);
 
 
 .sbm-btn2223123 {

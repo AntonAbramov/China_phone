@@ -1,4 +1,8 @@
 $(document).ready(function () {
+  cart();
+  slider();
+
+
 
 
 });
@@ -47,4 +51,41 @@ var tabs = function () {
 	}
 }
 
+var cart = function () {
+  if ($(".cart-entity").length) {
 
+    $(".cart-btn").on("click", function() {
+      $('.cart').toggleClass("show");
+    });
+
+    $(document).click(function (event) {
+      if ($(event.target).closest(".cart-entity").length) {
+        event.stopPropagation();
+        return false
+      }
+      else if ($(event.target).closest(".cart-btn").length) {
+      event.stopPropagation();
+        return false
+      }
+      else {
+        if ($(".cart").hasClass("show")) {
+          $(".cart").removeClass("show");
+        }
+      }
+    });
+
+    $(".cart .close").on("click", function(event) {
+      event.stopPropagation();
+      $(this).parents("tr").next().remove();
+      $(this).parents("tr").remove();
+    })
+  }
+}
+var slider = function() {
+  if ($(".slider").length) {
+    $(".slider").slidesjs({
+  //	width: 940,
+      height: 263
+    });
+  }
+}

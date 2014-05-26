@@ -1,0 +1,156 @@
+.footer-mobile {
+	background: #f5f7f8;
+	padding:15px;
+	.following {
+		.following-text {
+			text-align: center;
+			font-size: 28px;
+			line-height: 28px;
+			color:#35485f;
+			margin-bottom:15px;
+		}
+		.sosial-list {
+			margin-bottom:50px;
+			text-align: center;
+			li {
+				display: inline-block;
+				margin:0 10px;
+				vertical-align: middle;
+				a {
+					width:64px;
+					height:64px;
+					display: block;
+					position: relative;
+					border-radius: 5px;
+					@include transition(none);
+					.icon {
+						position: absolute;
+						top:50%;
+						left:50%;
+						z-index: 2;
+					}
+					.mobile-youtube {
+						margin-top:-25px;
+						margin-left:-22px;
+					}
+					.mobile-tw {
+						margin-top:-16px;
+						margin-left:-20px;
+					}
+					.mobile-vk {
+						margin-top:-14px;
+						margin-left:-25px;
+					}
+					.mobile-mail {
+						margin-top:-16px;
+						margin-left:-24px;
+					}
+					&:hover {
+						background: #35485f;
+						.mobile-youtube {
+							@include mobile-sprite(youtube-a);
+						}
+						.mobile-tw {
+							@include mobile-sprite(tw-a);
+						}
+						.mobile-vk {
+							@include mobile-sprite(vk-a);
+						}
+						.mobile-mail {
+							@include mobile-sprite(mail-a);
+						}
+					}
+				}
+			}
+		}
+	}
+	.orange-button {
+		margin-bottom: 50px;
+			a {
+				display: block;
+				height:90px;
+				line-height: 90px;
+				padding:0 20px;
+				color:#fff;
+				text-decoration: none;
+				font-size: 36px;
+				text-align: center;
+				.icon {
+					margin-right:30px;
+					position: relative;
+					top:10px;
+				}
+			}
+		}
+}
+.footer {
+	background: #35485f;
+	max-width: 960px;
+	padding:30px;
+	display: none;
+	color:#e6f0f6;
+	margin:0 auto;
+	font-size: 14px;
+	.copyright {
+		float:left;
+	}
+	.map {
+		float:right;
+		a {
+			color:#03b4ea;
+		}
+	}
+	.sosials {
+		margin:0 auto;
+		width:270px;
+		ul {
+			text-align: center;
+			margin:15px 0;
+			li {
+				display: inline-block;
+				margin:0 8px;
+				vertical-align: top;
+				a {
+					width:33px;
+					height:33px;
+					border-radius: 5px;
+					text-align: center;
+					line-height: 33px;
+					display: block;
+					@include transition(none);
+					.icons-youtube {
+						position: relative;
+						top:4px;
+					}
+					.icons-tw {
+						position: relative;
+						top:5px;
+					}
+					.icons-vk {
+						position: relative;
+						top:3px;
+					}
+					.icons-mail {
+						position: relative;
+						top:5px;
+					}
+					&:hover {
+						background: #fff;
+						.icons-youtube {
+							@include icons-sprite(youtube-a);
+						}
+						.icons-tw {
+							@include icons-sprite(tw-a);
+						}
+						.icons-vk {
+							@include icons-sprite(vk-a);
+						}
+						.icons-mail {
+							@include icons-sprite(mail-active);
+						}
+					}
+				}
+			}
+		}
+	}
+}

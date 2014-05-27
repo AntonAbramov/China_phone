@@ -1,11 +1,11 @@
 .header {
 	margin:0 auto 15px;
-	max-width:1024px;
+	max-width:960px;
 	display: none;
 	.logo {
 		float:left;
 		display: block;
-		margin-right:50px;
+		margin-right:40px;
 		margin-top:17px;
 		img {
 			display: block;
@@ -15,7 +15,7 @@
 	.search {
 		float:left;
 		margin-top:25px;
-		margin-right: 40px;
+		margin-right: 20px;
 		@extend .cf;
 		input[type="search"],
 		input[type="text"] {

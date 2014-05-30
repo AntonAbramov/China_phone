@@ -426,3 +426,10 @@ th {
 	-o-box-sizing: border-box;
 	box-sizing: border-box;
 }
+ul {
+	margin:0;
+	padding:0;
+}
+ul li {
+	list-style: none;
+}

@@ -1,7 +1,7 @@
 $(document).ready(function () {
   cart();
   slider();
-
+  catalogBtn();
 
 
 
@@ -56,6 +56,9 @@ var cart = function () {
 
     $(".cart-btn").on("click", function() {
       $('.cart').toggleClass("show");
+      setTimeout(function(){
+        $('.cart').toggleClass('cart-animation');
+      })
     });
 
     $(document).click(function (event) {
@@ -69,7 +72,7 @@ var cart = function () {
       }
       else {
         if ($(".cart").hasClass("show")) {
-          $(".cart").removeClass("show");
+          $(".cart").removeClass("show").removeClass("cart-animation");
         }
       }
     });
@@ -88,4 +91,15 @@ var slider = function() {
       height: 263
     });
   }
+}
+
+var catalogBtn = function() {
+  var catalog = $(".catalog");
+  catalog.find("button.orange").on("click", function(){
+
+    catalog.toggleClass("catalog-show");
+    setTimeout(function(){
+      catalog.toggleClass('catalog-animation');
+    }, 1);
+  });
 }

@@ -21,7 +21,7 @@
 }
 
 .products {
-	margin: 0 -1%;
+	margin: 0 -1% 50px;
 	.item {
 		padding:20px 20px 40px;
 		width:31.3%;
@@ -36,7 +36,6 @@
 			.zoom,
 			.video {
 				display: block;
-
 			}
 		}
 			.zoom,
@@ -119,4 +118,7 @@
 }
 .main-inner {
 	padding:0;
+}
+.tablet-content {
+	display: block;
 }

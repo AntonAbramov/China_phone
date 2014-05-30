@@ -130,7 +130,36 @@ input, textarea {
 			top:10px;
 			z-index: 2;
 		}
-
+		&.sold:before {
+			content:"Все проданы";
+			height:36px;
+			line-height:36px;
+			position: absolute;
+			left:0px;
+			width:145px;
+			color:#333;
+			font-weight: bold;
+			text-align: center;
+			top:10px;
+			z-index: 2;
+			background: #fee768;
+			border-radius: 0 5px 5px 0;
+		}
+		&.last:before {
+			content:"Все проданы";
+			height:36px;
+			line-height:36px;
+			position: absolute;
+			left:0px;
+			width:145px;
+			color:#fff;
+			font-weight: bold;
+			text-align: center;
+			top:10px;
+			z-index: 2;
+			background: #e26147;
+			border-radius: 0 5px 5px 0;
+		}
 		.preview {
 			text-align: center;
 			a {
@@ -143,7 +172,7 @@ input, textarea {
 				}
 				img {
 					max-width: 100%;
-					margin-bottom:20px;
+					margin-bottom:10px;
 				}
 				.name {
 					display: block;
@@ -182,6 +211,7 @@ input, textarea {
 	@include background-image(linear-gradient(top,  #30abfc 0%,#00d3ff 100%));
 	height:40px;
 	display: none;
+	position: relative;
 	.catalog {
 		float:left;
 		button {
@@ -197,6 +227,106 @@ input, textarea {
 				 position: absolute;
 				top:17px;
 				right:30px;
+			}
+		}
+		&.catalog-show {
+			.catalog-menu {
+				display: block;
+			}
+		}
+		&.catalog-animation {
+			.catalog-menu {
+				top: 40px;
+				opacity: 1;
+			}
+		}
+		.catalog-menu {
+			position: absolute;
+			width:264px;
+			border:2px solid #f09607;
+			z-index: 10;
+			background: #fff;
+			border-radius: 3px;
+			@include transition();
+			opacity: 0;
+			display: none;
+			top:30px;
+			> li {
+				line-height:16px;
+				border-top:1px solid #f2f2f2;
+				position: relative;
+				&:first-child {
+					border-top:none;
+				}
+				> a {
+					@include transition(none);
+					text-decoration: none;
+					display: block;
+					line-height: 16px;
+					font-size: 16px;
+					color:#333333;
+					padding:12px 15px 12px;
+					&:hover {
+						background: #f09607;
+						color:#fff;
+					}
+				}
+				&:hover {
+					> a {
+						background: #f09607;
+						color:#fff;
+					}
+					ul {
+						display: block;
+					}
+				}
+				ul {
+					display: none;
+					position: absolute;
+					left:262px;
+					background: #fff;
+					box-shadow: 0 0 9px rgba(0,0,0, .5);
+					border:1px solid #ccc;
+					top:0;
+					width:200px;
+					padding:10px 10px 10px 25px;
+					&:before {
+						content: "";
+						border: 8px solid;
+						border-color: transparent #fff transparent transparent;
+						position: absolute;
+						left: -16px;
+						top: 13px;
+						z-index: 3;
+					}
+					a {
+						display: block;
+						padding:6px 0;
+						position: relative;
+						font-size: 14px;
+						color:#333;
+						text-decoration: none;
+						&:hover {
+							color:#00b0f6;
+							text-decoration: underline;
+							&:before {
+								display: block;
+							}
+						}
+						&:before {
+							content:"";
+							position: absolute;
+							top:11px;
+							left:-15px;
+							z-index: 2;
+							display:none;
+							width:8px;
+							background: #f09607;
+							height:8px;
+							border-radius: 10px;
+						}
+					}
+				}
 			}
 		}
 	}

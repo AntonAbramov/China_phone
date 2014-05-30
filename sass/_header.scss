@@ -26,8 +26,12 @@
 			box-shadow: none;
 			font-size:14px;
 			float:left;
-			width:270px;
+			width:200px;
 			margin-right:5px;
+			@include transition();
+			&:focus {
+				width:270px;
+			}
 		}
 		button {
 			float:right;
@@ -130,13 +134,21 @@
 				display: block;
 			}
 		}
+		&.cart-animation {
+			.cart-entity {
+				opacity: 1;
+				top:70px;
+			}
+		}
 		.cart-entity {
+			@include transition();
 			display: none;
 			width: 490px;
 			right:0;
+			opacity: 0;
 			position: absolute;
 			z-index: 10;
-			top:70px;
+			top:60px;
 			background: #fff;
 			border:2px solid #1fb9fd;
 			border-radius: 5px;
@@ -408,7 +420,6 @@
 	&.with-icon {
 		padding-left:50px;
 		position: relative;
-		left:3px;
 		.icon {
 			position: absolute;
 			top:-20px;

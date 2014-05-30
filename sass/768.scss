@@ -21,9 +21,10 @@
 }
 
 .products {
-	margin: 0 -1% 50px;
+
+	margin: 0 10px 50px;
 	.item {
-		padding:20px 20px 40px;
+		padding:60px 20px 40px;
 		width:31.3%;
 		margin:0 1% 2%;
 		min-height: 320px;
@@ -38,41 +39,59 @@
 				display: block;
 			}
 		}
-			.zoom,
-			.video {
-				position: absolute;
-				height:34px;
-				display: none;
-				width: 33px;
-				background: #f1f2f3;
-				border-radius: 5px;
-				text-align: center;
-			}
-			.zoom {
-				top:85px;
-				&:hover {
-					.icon {
-						@include icons-sprite(zoom-inn-a);
-					}
+		.preview {
+			a {
+				position: relative;
+				padding-bottom:40px;
+				height: 170px;
+				img {
+					max-height: 100%;
 				}
-				.icon {
-					position: relative;
-					top:7px;
+				span {
+					position: absolute;
+					width:100%;
+					bottom:0;
+					left:0;
 				}
 			}
-			.video {
-				top:130px;
-				&:hover {
-					.icon {
-						@include icons-sprite(video-a);
-					}
-				}
-				.icon {
-					position: relative;
-					top:7px;
 
+
+		}
+		.zoom,
+		.video {
+			position: absolute;
+			height:34px;
+			display: none;
+			width: 33px;
+			background: #f1f2f3;
+			border-radius: 5px;
+			text-align: center;
+		}
+		.zoom {
+			top:85px;
+			&:hover {
+				.icon {
+					@include icons-sprite(zoom-inn-a);
 				}
 			}
+			.icon {
+				position: relative;
+				top:7px;
+			}
+		}
+		.video {
+			top:130px;
+			&:hover {
+				.icon {
+					@include icons-sprite(video-a);
+				}
+			}
+			.icon {
+				position: relative;
+				top:7px;
+
+			}
+		}
 		.add-to-cart {
 			text-align: center;
 			position: absolute;

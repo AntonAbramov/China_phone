@@ -33,9 +33,9 @@ a {
 	-o-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 	text-decoration: underline;
-	color:#0267b5;
+	color:#35485f;
 	&:hover, &:focus {
-		color:#0267b5;
+		color:#2caefc;
 		text-decoration: none;
 	}
 }
@@ -134,6 +134,13 @@ input, textarea {
 			top:10px;
 			z-index: 2;
 		}
+		&.sold {
+			.preview a .name,
+			.preview a .description-list,
+			.list-holder .price{
+				color:#828282!important;
+			}
+		}
 		&.sold:before {
 			content:"Все проданы";
 			height:36px;
@@ -173,7 +180,8 @@ input, textarea {
 				width:100%;
 				&:hover, &:focus {
 					.name {
-						text-decoration: none;
+						text-decoration: underline;
+						color:#2caefc;
 					}
 				}
 				img {
@@ -192,6 +200,7 @@ input, textarea {
 					text-overflow: ellipsis;
 					overflow: hidden;
 					white-space: nowrap;
+
 				}
 			}
 		}
@@ -256,9 +265,10 @@ input, textarea {
 						text-align: left;
 						float:none;
 						text-decoration: underline;
-						color:#2caefc;
+						color:#006699;
 						&:hover {
-							text-decoration: none;
+							color:#2caefc;
+							text-decoration: underline;
 						}
 					}
 					.description-list {
@@ -271,7 +281,7 @@ input, textarea {
 						.list-more-detail {
 							text-decoration: underline;
 							display: block;
-							colro:#006699;
+							color:#006699;
 							text-decoration: underline;
 							margin-top:10px;
 							.icon {
@@ -279,6 +289,7 @@ input, textarea {
 								position: relative;
 							}
 							&:hover {
+								color:#2caefc;
 								text-decoration: none;
 							}
 							.list-more-detail {
@@ -1032,4 +1043,20 @@ input, textarea {
 		float:right;
 	}
 }
-
+.sold-out {
+	height:30px;
+	line-height: 30px;
+	color:#828282;
+	float:left;
+	font-size: 16px;
+	margin-left: 30px;
+	a {
+		font-size: 14px;
+		text-decoration: underline;
+		color:#2caefc;
+		margin-left: 10px;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}

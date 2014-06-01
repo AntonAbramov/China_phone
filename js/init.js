@@ -102,6 +102,11 @@ var catalogBtn = function() {
       catalog.toggleClass('catalog-animation');
     }, 1);
   });
+
+  $('.header-mobile .catalog-menu').find('>li > a').on('click', function(event){
+    event.preventDefault();
+    $(this).parent().toggleClass("active")
+  });
 }
 
 var filterSection = function() {

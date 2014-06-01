@@ -366,7 +366,7 @@
 		padding:15px;
 		.catalog {
 			float:left;
-			a {
+			button {
 				font-size: 16px;
 				display:block;
 				color:#fff;
@@ -374,6 +374,7 @@
 				padding:8px 40px 8px 20px;
 				position: relative;
 				text-decoration: none;
+				border: none;
 				&:before {
 					content: "";
 					right: 13px;
@@ -382,6 +383,100 @@
 					width: 10px;
 					height: 16px;
 					position: absolute;
+				}
+			}
+			.catalog-menu {
+				display: none;
+				position: absolute;
+				top: 145px;
+				width: 100%;
+				background: #fff;
+				z-index: 10;
+				> li {
+
+					font-size: 16px;
+					line-height: 16px;
+					border-top:1px solid #f2f2f2;
+					margin-left: -20px;
+					position: relative;
+					&:after {
+						content:"";
+						@include icons-sprite(catalog-arrow-right);
+						width:5px;
+						height:10px;
+						top:14px;
+						right:30px;
+						z-index: 2;
+						position: absolute;
+					}
+					a {
+						display: block;
+						text-decoration: none;
+						padding:10px 20px;
+						&:hover {
+							text-decoration: underline;
+						}
+					}
+					> a:hover {
+						background: #f09607;
+						text-decoration: underline;
+						color:#fff;
+					}
+					&:first-child{
+						border-top:none;
+					}
+					ul {
+						display: none;
+						li {
+							border-top:1px solid #f1f0f0;
+							&:first-child {
+								border-top:none;
+							}
+						}
+						a {
+							padding-left: 40px;
+							position: relative;
+						/*	&:before {
+								content:"";
+								position: absolute;
+								top:11px;
+								left:15px;
+								z-index: 2;
+								display:none;
+								width:8px;
+								background: #f09607;
+								height:8px;
+								border-radius: 10px;
+							}*/
+							&:hover {
+								background: #f5f7f8;
+								color:#00b0f6;
+							}
+						}
+					}
+					&.active {
+						&:after {
+							@include icons-sprite(catalog-arrow-bottom);
+							width:9px;
+							height:6px;
+							right:28px;
+							top:15px;
+						}
+						> a {
+							background: #f09607;
+							text-decoration: underline;
+							color:#fff;
+						}
+
+						ul {
+							display: block;
+						}
+					}
+				}
+			}
+			&.catalog-show {
+				.catalog-menu {
+					display: block;
 				}
 			}
 		}

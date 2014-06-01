@@ -1,0 +1,578 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Framework</title>
+	<meta charset="UTF-8"/>
+	<!--<meta name="viewport" content="width=device-width; initial-scale=1.0">-->
+	<meta name="author" content="Anton Abramov"/>
+	<meta name="keywords" content=""/>
+	<meta name="description" content=""/>
+	<link type="image/x-icon" rel="shortcut icon" href="favicon.ico"/>
+	<link rel="stylesheet" href="css/normalize.css" type="text/css" media="all"/>
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all"/>
+	<link rel="stylesheet" media="only screen and (min-width: 480px)" href="css/480.css">
+	<link rel="stylesheet" media="only screen and (min-width: 600px)" href="css/600.css">
+	<link rel="stylesheet" media="only screen and (min-width: 768px)" href="css/768.css">
+	<link rel="stylesheet" media="only screen and (min-width: 992px)" href="css/992.css">
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<header class="header cf">
+		<a title="Kitaiskie telefoni" href="/" class="logo">
+			<img src="img/logo.png" alt="Kitaiskie telefoni"  />
+		</a>
+		<div class="search">
+			<input type="search" placeholder="Поиск"/>
+			<button class="btn gray"><i class="icon icons-search"></i></button>
+		</div>
+		<a href="tel://7-123-456-7700" class="call-back">
+			<i class="icon icons-tel"></i>
+			<span class="tel">+7 (123) 456-77-00</span>
+			<span class="text">Перезвоните</span>
+		</a>
+		<div class="cart not-empty">
+			<div class="cart-btn">
+				<i class="icon icons-cart">
+					<span class="amount">3</span>
+				</i>
+				В корзине пусто
+				<div class="cart-count-items">3 товара</div>
+			</div>
+			<div class="cart-entity">
+				<div class="redirect">
+					<a href="#">Перейти в корзину</a>
+				</div>
+				<table class="popup-cart-table">
+					<thead>
+						<tr>
+							<td class="item"></td>
+							<td class="price">ЦЕНА</td>
+							<td class="count">К-ВО</td>
+							<td class="total">Сумма</td>
+							<td class="close"></td>
+						</tr>
+
+					</thead>
+					<tbody>
+						<tr >
+							<td rowspan="2" class="item brd-b"><a href="#"><img src="img/small-pic.jpg" alt=""/></a></td>
+							<td colspan="3" class="name">Hero H9500+ A9600 MTK6589</td>
+							<td rowspan="2" class="close brd-b"><span class="icon icons-close" title="закрыть"></span></td>
+						</tr>
+						<tr>
+							<td class="price brd-b"><strong>9400.00</strong> руб. </td>
+							<td class="count brd-b">
+								<span class="min-js icon icons-arrow-small-left"></span>
+								<input maxlength="3" type="text"/>
+								<span class="plus-js icons-arrow-small-right icon"></span></td>
+							<td class="total brd-b"><strong>9400.00</strong> руб. </td>
+						</tr>
+						<tr >
+							<td rowspan="2" class="item brd-b"><a href="#"><img src="img/small-pic.jpg" alt=""/></a></td>
+							<td colspan="3" class="name">Hero H9500+ A9600 MTK6589</td>
+							<td rowspan="2" class="close brd-b"><span class="icon icons-close" title="закрыть"></span></td>
+						</tr>
+						<tr>
+							<td class="price brd-b"><strong>9400.00</strong> руб. </td>
+							<td class="count brd-b">
+								<span class="min-js icon icons-arrow-small-left"></span>
+								<input maxlength="3" type="text"/>
+								<span class="plus-js icons-arrow-small-right icon"></span></td>
+							<td class="total brd-b"><strong>9400.00</strong> руб. </td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="total-amount">
+					<span class="container">
+						<strong>Общая сумма: 25 600 </strong>руб.
+					</span>
+				</div>
+				<div class="bottom-buttons">
+					<a href="#" class="order-click">Заказ “в 1 клик”</a>
+					<a href="#" class="order">Оформить заказ</a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<header class="header-mobile">
+		<div class="inn">
+			<div class="mobile-nav">
+				<nav>
+					<a href="#">test</a>
+					<a href="#">test</a>
+					<a href="#">test</a>
+				</nav>
+			</div>
+
+			<a href="#" class="icon icons-cart-active"><span class="amount">3</span></a>
+			<a class="logo" href="/"><img src="img/mobile-logo.png" alt=""/></a>
+		</div>
+		<div class="header-mid cf">
+			<div class="catalog">
+				<a class="btn orange" href="#">каталог</a>
+			</div>
+			<div class="search">
+				<input type="search" placeholder="Поиск" />
+				<button class="btn gray"><i class="icon icons-search"></i></button>
+			</div>
+		</div>
+	</header>
+	<div class="main-inner">
+		<div class="top-menu">
+			<div class="catalog">
+				<button class="btn orange">каталог<i class="icon icons-arrow-bottom"></i></button>
+				<ul class="catalog-menu">
+					<li>
+						<a href="#">Противоударные телефоны</a>
+						<ul>
+							<li>
+								<a href="#">Louis Vuitton 1978 Gold</a>
+							</li>
+							<li>
+								<a href="#">Louis Vuitton 1978 Gold</a>
+							</li>
+							<li>
+								<a href="#">Louis Vuitton 1978 Gold</a>
+							</li>
+							<li>
+								<a href="#">Louis Vuitton 1978 Gold</a>
+							</li>
+							<li>
+								<a href="#">Louis Vuitton 1978 Gold</a>
+							</li>
+							<li>
+								<a href="#">Louis Vuitton 1978 Gold</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Противоударные смартфоны</a>
+					</li>
+					<li>
+						<a href="#">Смартфоны Zopo</a>
+					</li>
+					<li>
+						<a href="#">Смартфоны ThL</a>
+					</li>
+					<li>
+						<a href="#">Смартфоны Xiaomi</a>
+						<ul>
+							<li>
+								<a href="#">Louis Vuitton 1978 Gold</a>
+							</li>
+							<li>
+								<a href="#">Louis Vuitton 1978 Gold</a>
+							</li>
+							<li>
+								<a href="#">Louis Vuitton 1978 Gold</a>
+							</li>
+							<li>
+								<a href="#">Louis Vuitton 1978 Gold</a>
+							</li>
+							<li>
+								<a href="#">Louis Vuitton 1978 Gold</a>
+							</li>
+							<li>
+								<a href="#">Louis Vuitton 1978 Gold</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Смартфоны Meizu</a>
+					</li>
+					<li>
+						<a href="#">Смартфоны Runbo</a>
+					</li>
+					<li>
+						<a href="#">Телефоны Vertu</a>
+					</li>
+					<li>
+						<a href="#">Телефоны Louis Vuitton</a>
+					</li>
+					<li>
+						<a href="#">Копии Samsung</a>
+					</li>
+					<li>
+						<a href="#">Копии iPhone</a>
+					</li>
+					<li>
+						<a href="#">Копии Nokia</a>
+					</li>
+					<li>
+						<a href="#">Шпионские штучки</a>
+					</li>
+					<li>
+						<a href="#">Автотовары</a>
+					</li>
+					<li>
+						<a href="#">teststeasdadsasd</a>
+					</li>
+					<li>
+						<a href="#">Аксессуары</a>
+					</li>
+					<li>
+						<a href="#">Новинки телефонов</a>
+					</li>
+					<li>
+						<a href="#">Телефоны со скидкой!</a>
+					</li>
+				</ul>
+			</div>
+			<nav class="cf">
+				<a href="#">Доставка и оплата</a>
+				<a href="#">Гарантии</a>
+				<a href="#">Вопросы / Ответы</a>
+				<a href="#">Контакты</a>
+			</nav>
+		</div>
+		<div class="wrapper cf">
+			<aside class="left-sidebar">
+				<a href="#" class="banner-side action">
+					<span class="pic"><img src="img/side-ico-banner.png" alt=""/></span>
+					<span class="text">Качественный телефон Batl S09</span>
+					<span class="price">6500.00 <sub>руб.</sub></span>
+				</a>
+				<div class="mb20"><a href="#"><img src="img/side-banner2.jpg" alt=""/></a></div>
+				<div class="day-item">
+					<div class="heading">товар дня!</div>
+					<a class="preview uspei" href="#"><img src="img/banner-pic4.jpg" alt=""/></a>
+					<a class="name" href="#">Rundo X6</a>
+					<div class="price">
+						Цена: <strong>25 700 </strong>руб.
+					</div>
+					<a class="more-detail"  href="#">Подробнее</a>
+				</div>
+				<a href="#" class="banner-side">
+					<span class="heading">
+						Закажи телефон
+						и получи <span>ПОДАРОК!</span>
+					</span>
+					<span class="pic"><img src="img/banner-pic4.png" alt=""/></span>
+					<span class="text">Качественный телефон Batl S09</span>
+					<span class="price">6522200.00 <sub>руб.</sub></span>
+				</a>
+			</aside>
+			<div class="left-content">
+				<div class="breadcrumbs">
+					<ul>
+						<li>
+							<a href="#">Главная</a>
+						</li>
+						<li>
+							<a href="#">Каталог</a>
+						</li>
+						<li class="active">
+							<a href="#">Телефоны Louis Vuitton </a>
+						</li>
+					</ul>
+				</div>
+				<div class="filter opened">
+					<div class="mb10">
+						<button class="js-filter btn-filter">Фильтр</button>
+					</div>
+					<div class="inn">
+						<section class="filter-section">
+							<div class="filter-name">Бренды:</div>
+							<div class="filter-fields">
+								<a class="filter-item active" href="#">Все бренды</a>
+								<a class="filter-item" href="#">Zopo</a>
+								<a class="filter-item" href="#">ThL</a>
+								<a class="filter-item" href="#">Xiaomi</a>
+								<a class="filter-item" href="#">Meizu</a>
+								<a class="filter-item" href="#">Runbo</a>
+								<a class="filter-item" href="#">Vertu</a>
+								<a class="filter-item" href="#">Louis Vuitton</a>
+								<a class="filter-item" href="#">Samsung</a>
+								<a class="filter-item" href="#">iPhone</a>
+								<a class="filter-item" href="#">Nokia</a>
+							</div>
+						</section>
+						<section class="filter-section">
+							<div class="filter-name">Характеристики:</div>
+							<div class="filter-fields">
+								<div class="checkbox-box">
+									<input id="GPS" type="checkbox"/>
+									<label for="GPS"><i class="icon"></i>GPS</label>
+								</div>
+								<div class="checkbox-box">
+									<input id="andr" type="checkbox"/>
+									<label for="andr"><i class="icon"></i>ОС Android</label>
+								</div>
+								<div class="checkbox-box">
+									<input id="with-ration" type="checkbox"/>
+									<label for="with-ration"><i class="icon"></i>С рацией</label>
+								</div>
+								<div class="checkbox-box">
+									<input id="sim-two" type="checkbox"/>
+									<label for="sim-two"><i class="icon"></i>2 SIM-карты</label>
+								</div>
+								<div class="checkbox-box">
+									<input id="acumulator" type="checkbox"/>
+									<label for="acumulator"><i class="icon"></i>Мощный аккумулятор</label>
+								</div>
+							</div>
+						</section>
+						<section class="filter-section">
+							<div class="filter-name">Сортировка:</div>
+							<div class="filter-fields sorting-buttons">
+								<button>
+									<i class="icon icons-arrow-top"></i>
+									<span class="info">по цене вверх</span>
+								</button>
+								<button>
+									<i class="icon icons-arrow-down"></i>
+									<span class="info">по цене вниз</span>
+								</button>
+							</div>
+						</section>
+					</div>
+				</div>
+				<div class="f20">
+					<h2>Телефоны Louis Vuitton</h2>
+				</div>
+
+				<div class="products cf">
+					<div class="trigger-section js-trigger-products">
+						<input type="radio" id="blocks" name="list"  />
+						<label for="blocks"><i class="icon icons-blocks"></i></label>
+						<input type="radio" id="list-block" name="list" checked />
+						<label for="list-block"><i class="icon icons-list"></i></label>
+					</div>
+					<div class="item percent10">
+						<a href="#" class="zoom"><i class="icon icons-zoom-inn"></i></a>
+						<a href="#" class="video"><i class="icon icons-video"></i></a>
+						<div class="preview">
+							<a href="#">
+								<span class="pic"><img src="img/mobile-item.jpg" alt=""/></span>
+								<span class="name">Amoi N828 MTK6589</span>
+								<span class="description-list">
+									Защищенный телефон Snopow M8, долгожданное продолжение предыдущей модели Snopow M6, которая имела определенный успех. По характеристикам и цене Snopow...
+									<span class="list-more-detail">
+										Подробнее <i class="icon icons-arrow-next-b"></i>
+									</span>
+								</span>
+							</a>
+						</div>
+						<div class="list-holder">
+							<div class="price"><strong>8300.00</strong> руб.</div>
+							<div class="add-to-cart">
+								<button class="btn blue">В корзину</button>
+							</div>
+						</div>
+						<div class="description">
+							<div>
+								<strong>Первый защищенный восьмиядерный смартфон! </strong>
+							</div>
+							Android 4.2, 2SIM, аккумулятор на 3000 mAh, IPS-дисплей 4.3" защита IP68, ...
+						</div>
+					</div><!-- .item -->
+					<div class="item percent10">
+						<a href="#" class="zoom"><i class="icon icons-zoom-inn"></i></a>
+						<a href="#" class="video"><i class="icon icons-video"></i></a>
+						<div class="preview">
+							<a href="#">
+								<span class="pic"><img src="img/mobile-item.jpg" alt=""/></span>
+								<span class="name">Amoi N828 MTK6589</span>
+								<span class="description-list">
+									Защищенный телефон Snopow M8, долгожданное продолжение предыдущей модели Snopow M6, которая имела определенный успех. По характеристикам и цене Snopow...
+									<span class="list-more-detail">
+										Подробнее <i class="icon icons-arrow-next-b"></i>
+									</span>
+								</span>
+							</a>
+						</div>
+						<div class="list-holder">
+							<div class="price"><strong>8300.00</strong> руб.</div>
+							<div class="add-to-cart">
+								<button class="btn blue">В корзину</button>
+							</div>
+						</div>
+						<div class="description">
+							<div>
+								<strong>Первый защищенный восьмиядерный смартфон! </strong>
+							</div>
+							Android 4.2, 2SIM, аккумулятор на 3000 mAh, IPS-дисплей 4.3" защита IP68, ...
+						</div>
+					</div><!-- .item -->
+					<div class="item hit">
+						<a href="#" class="zoom"><i class="icon icons-zoom-inn"></i></a>
+						<a href="#" class="video"><i class="icon icons-video"></i></a>
+						<div class="preview">
+							<a href="#">
+								<span class="pic"><img src="img/mid-pic2.jpg" alt=""/></span>
+								<span class="name">Amoi N828 MTK6589</span>
+								<span class="description-list">
+									Защищенный телефон Snopow M8, долгожданное продолжение предыдущей модели Snopow M6, которая имела определенный успех. По характеристикам и цене Snopow...
+									<span class="list-more-detail">
+										Подробнее <i class="icon icons-arrow-next-b"></i>
+									</span>
+								</span>
+							</a>
+						</div>
+						<div class="list-holder">
+							<div class="price"><strong>8300.00</strong> руб.</div>
+							<div class="add-to-cart">
+								<button class="btn blue">В корзину</button>
+							</div>
+						</div>
+						<div class="description">
+							<div>
+								<strong>Первый защищенный восьмиядерный смартфон! </strong>
+							</div>
+							Android 4.2, 2SIM, аккумулятор на 3000 mAh, IPS-дисплей 4.3" защита IP68, ...
+						</div>
+					</div><!-- .item -->
+					<div class="item new">
+						<a href="#" class="zoom"><i class="icon icons-zoom-inn"></i></a>
+						<a href="#" class="video"><i class="icon icons-video"></i></a>
+						<div class="preview">
+							<a href="#">
+								<span class="pic"><img src="img/mid-pic2.jpg" alt=""/></span>
+								<span class="name">Amoi N828 MTK6589</span>
+								<span class="description-list">
+									Защищенный телефон Snopow M8, долгожданное продолжение предыдущей модели Snopow M6, которая имела определенный успех. По характеристикам и цене Snopow...
+									<span class="list-more-detail">
+										Подробнее <i class="icon icons-arrow-next-b"></i>
+									</span>
+								</span>
+							</a>
+						</div>
+						<div class="list-holder">
+							<div class="price"><strong>8300.00</strong> руб.</div>
+							<div class="add-to-cart">
+								<button class="btn blue">В корзину</button>
+							</div>
+						</div>
+						<div class="description">
+							<div>
+								<strong>Первый защищенный восьмиядерный смартфон! </strong>
+							</div>
+							Android 4.2, 2SIM, аккумулятор на 3000 mAh, IPS-дисплей 4.3" защита IP68, ...
+						</div>
+					</div><!-- .item -->
+					<div class="item last">
+						<a href="#" class="zoom"><i class="icon icons-zoom-inn"></i></a>
+						<a href="#" class="video"><i class="icon icons-video"></i></a>
+						<div class="preview">
+							<a href="#">
+								<span class="pic"><img src="img/mid-pic3.jpg" alt=""/></span>
+								<span class="name">Amoi N828 MTK6589</span>
+								<span class="description-list">
+									Защищенный телефон Snopow M8, долгожданное продолжение предыдущей модели Snopow M6, которая имела определенный успех. По характеристикам и цене Snopow...
+									<span class="list-more-detail">
+										Подробнее <i class="icon icons-arrow-next-b"></i>
+									</span>
+								</span>
+							</a>
+						</div>
+						<div class="list-holder">
+							<div class="price"><strong>8300.00</strong> руб.</div>
+							<div class="add-to-cart">
+								<button class="btn blue">В корзину</button>
+							</div>
+						</div>
+						<div class="description">
+							<div>
+								<strong>Первый защищенный восьмиядерный смартфон! </strong>
+							</div>
+							Android 4.2, 2SIM, аккумулятор на 3000 mAh, IPS-дисплей 4.3" защита IP68, ...
+						</div>
+					</div><!-- .item -->
+					<div class="item sold">
+						<a href="#" class="zoom"><i class="icon icons-zoom-inn"></i></a>
+						<a href="#" class="video"><i class="icon icons-video"></i></a>
+						<div class="preview">
+							<a href="#">
+								<span class="pic"><img src="img/mid-pic2.jpg" alt=""/></span>
+								<span class="name">Amoi N828 MTK6589</span>
+								<span class="description-list">
+									Защищенный телефон Snopow M8, долгожданное продолжение предыдущей модели Snopow M6, которая имела определенный успех. По характеристикам и цене Snopow...
+									<span class="list-more-detail">
+										Подробнее <i class="icon icons-arrow-next-b"></i>
+									</span>
+								</span>
+							</a>
+						</div>
+						<div class="list-holder">
+							<div class="price"><strong>8300.00</strong> руб.</div>
+							<div class="add-to-cart">
+								<button class="btn blue">В корзину</button>
+							</div>
+						</div>
+						<div class="description">
+							<div>
+								<strong>Первый защищенный восьмиядерный смартфон! </strong>
+							</div>
+							Android 4.2, 2SIM, аккумулятор на 3000 mAh, IPS-дисплей 4.3" защита IP68, ...
+						</div>
+					</div><!-- .item -->
+				</div>
+			</div>
+		</div>
+
+
+		<div class="tablet-content">
+			<div class="index-container-text">
+				<p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.</p>
+				<p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum </p>
+			</div>
+		</div>
+	</div>
+	<footer class="footer">
+		<div class="copyright">
+			&copy; Китайские телефоны, 2014<br/>
+			Все права защищены.
+		</div>
+		<div class="map">
+			<a href="#">Карта сайта</a>
+		</div>
+		<div class="sosials">
+			<p>Следуйте за нами в социальных сетях:</p>
+			<ul>
+				<li>
+					<a href="#">
+						<i class="icon icons-youtube"></i>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="icon icons-tw"></i>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="icon icons-vk"></i>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="icon icons-mail"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+	</footer>
+	<footer class="footer-mobile">
+		<div class="following">
+			<p class="following-text">Следуйте за нами в социальных сетях:</p>
+			<ul class="sosial-list">
+				<li><a href="#"><i class="icon mobile-youtube"></i></a></li>
+				<li><a href="#"><i class="icon mobile-tw"></i></a></li>
+				<li><a href="#"><i class="icon mobile-vk"></i></a></li>
+				<li><a href="#"><i class="icon mobile-mail"></i></a></li>
+			</ul>
+		</div>
+		<div class="orange-button">
+			<a href="#" class="btn orange"><i class="icon mobile-cell"></i>+7 (123) 456-77-00</a>
+		</div>
+	</footer>
+	<button class="icon icons-up">scroll up</button>
+	<script src="js/jquery-2.0.3.min.js"></script>
+	<script src="js/jquery.slides.min.js"></script>
+	<script src="js/mousewheel.js"></script>
+	<script src="js/init.js"></script>
+</body>
+</html>

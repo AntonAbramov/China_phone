@@ -55,6 +55,9 @@ textarea {
 		clear:both;
 	}
 }
+.mb5 {
+	margin-bottom: 5px;
+}
 .mb10 {
 	margin-bottom:10px;
 }
@@ -90,6 +93,7 @@ input, textarea {
 }
 
 .products {
+	position: relative;
 	margin:0 -2%;
 	.item {
 		width:46%;
@@ -144,14 +148,16 @@ input, textarea {
 			z-index: 2;
 			background: #fee768;
 			border-radius: 0 5px 5px 0;
+			text-transform: uppercase;
 		}
 		&.last:before {
-			content:"Все проданы";
+			content:"Заканчивается";
 			height:36px;
 			line-height:36px;
 			position: absolute;
 			left:0px;
-			width:145px;
+			width:165px;
+			text-transform: uppercase;
 			color:#fff;
 			font-weight: bold;
 			text-align: center;
@@ -202,8 +208,114 @@ input, textarea {
 		.video {
 			display: none;
 		}
+		.description-list {
+			display: none;
+		}
+	}
+	&.list-items {
+		margin:0 0 20px;
+		.item{
+			width:100%;
+			margin:-1px 0 0 0;
+			min-height: 0px;
+			max-height: 1000px;
+			&:hover {
+				border-color:#2caefc;
+				box-shadow:0 0 0 1px #2caefc inset;
+				.add-to-cart {
+					display: block;
+				}
+			}
+			.zoom, .video {
+				display: none!important;
+			}
+			.preview {
+				a {
+					padding-bottom: 0;
+					height:auto;
+					text-decoration: none;
+					span {
+						position: relative;
+						width: auto;
+					}
+					.pic {
+						display: block;
+						text-align: center;
+						width: 180px;
+						position: absolute;
+						left: 0;
+						top: 10px;
+						bottom: auto;
+					}
+					.name {
+						display: block;
+						padding-left:200px;
+						white-space: normal;
+						text-overflow:inherit;
+						word-spacing: normal;
+						text-align: left;
+						float:none;
+						text-decoration: underline;
+						color:#2caefc;
+						&:hover {
+							text-decoration: none;
+						}
+					}
+					.description-list {
+						display: block;
+						font-size: 14px;
+						color:#333;
+						margin-bottom: 10px;
+						padding-left: 200px;
+						text-align: left;
+						.list-more-detail {
+							text-decoration: underline;
+							display: block;
+							colro:#006699;
+							text-decoration: underline;
+							margin-top:10px;
+							.icon {
+								left:5px;
+								position: relative;
+							}
+							&:hover {
+								text-decoration: none;
+							}
+							.list-more-detail {
+								display: block;
+							}
+						}
+					}
+				}
+			}
+
+			
+			.price {
+				float:left;
+			}
+			.add-to-cart {
+				float:left;
+				margin-left: 20px;
+				position: relative;
+				bottom:0;
+				left:0;
+			}
+			&:hover {
+				.description {
+					display: none;
+				}
+			}
+			.list-holder {
+				padding-left: 200px;
+				.price {
+					height:30px;
+					line-height: 30px;
+				}
+			}
+		} //.item
 	}
 }
+
 .top-menu {
 	background-color: #30abfc;
 	@include filter-gradient(#30abfc, #00d3ff, vertical);
@@ -533,3 +645,391 @@ input, textarea {
 .icons-up {
 	display: none;
 }
+.left-sidebar {
+	display: none;
+	float:left;
+	width:264px;
+}
+
+.banner-side  {
+	border:1px solid #bed2e2;
+	border-radius: 15px;
+	position: relative;
+	padding:10px;
+	display: block;
+	background-color: #fafbfe;
+	@include filter-gradient(#fafbfe, #e7effa, vertical);
+	$experimental-support-for-svg: true;
+	@include background-image(linear-gradient(top,  #fafbfe 0%,#e7effa 100%));
+	overflow: hidden;
+	text-decoration: none;
+	margin-bottom: 20px;
+	.heading {
+		display: block;
+		margin:-10px -10px 0;
+		padding:10px 30px 5px 20px;
+		color:#fff;
+		font-size: 18px;
+		line-height: 24px;
+		background-color: #02d2ff;
+		@include filter-gradient(#02d2ff, #30abfc, vertical);
+		$experimental-support-for-svg: true;
+		@include background-image(linear-gradient(top,  #02d2ff 0%,#30abfc 100%));
+
+		span {
+			text-transform: uppercase;
+			font-size: 20px;
+		}
+	}
+	.pic {
+		display: block;
+		max-width: 100%;
+		max-height: 100%;
+		text-align: center;
+		margin:20px 0;
+		img {
+			display: inline-block;
+		}
+	}
+	.text {
+		display: block;
+		font-size: 18px;
+		margin-bottom: 5px;
+		color:#333;
+		padding:0 10px;
+	}
+	.price {
+		display:block;
+		float:right;
+		font-size: 24px;
+		color:#000;
+		padding:10px 5px 5px 30px;
+		border-bottom-right-radius: 10px;
+		background: #fff;
+		sub {
+			position: relative;
+			top:-1px;
+			font-size: 14px;
+		}
+	}
+}
+.action:before {
+	content:"АКЦИЯ!";
+	text-align: center;
+	width:120px;
+	height:34px;
+	line-height: 34px;
+	color:#fff;
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: bold;
+	position: absolute;
+	z-index: 2;
+	top:15px;
+	left:15px;
+	background: #d95136;
+	border-radius: 5px;
+
+}
+.day-item {
+	border-radius: 15px;
+	overflow: hidden;
+	border:2px solid #2caffc;
+	margin-bottom: 20px;
+	border-bottom-color:#949799;
+	.heading {
+		background-color: #02d2ff;
+		@include filter-gradient(#02d2ff, #30abfc, vertical);
+		$experimental-support-for-svg: true;
+		@include background-image(linear-gradient(top,  #02d2ff 0%,#30abfc 100%));
+		text-align: center;
+		padding:10px 20px 5px;
+		color:#fff;
+		font-size: 18px;
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+	.preview {
+		margin:60px 0 10px;
+		display: block;
+		text-align: center;
+		position: relative;
+		img {
+			display: inline-block;
+		}
+		&.uspei:before {
+			content: "";
+			background: url(../img/uspei.png) no-repeat;
+			position: absolute;
+			top:-50px;
+			right:-10px;
+			z-index: 2;
+			width:164px;
+			height:104px;
+		}
+	}
+	.name {
+		display: block;
+		color:#518fc9;
+		font-size: 16px;
+		text-decoration: underline;
+		padding:0 20px;
+		margin-bottom:5px;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+	.price {
+		padding:0 20px;
+		margin-bottom: 10px;
+		color:#000;
+		strong {
+			font-size: 24px;
+		}
+	}
+	.more-detail {
+		display: block;
+		padding:10px 20px;
+		margin:0 -2px -2px;
+		background: #949799;
+		text-align: center;
+		color:#fff;
+		font-size: 18px;
+		text-decoration: underline;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
+.breadcrumbs {
+	margin-bottom:20px;
+	ul {
+		overflow: hidden;
+	}
+	li {
+		float:left;
+		margin-left: 35px;
+		&:first-child {
+			margin-left: 0;
+		}
+		&.active {
+			a {
+				color:#006699;
+				text-decoration: underline;
+			}
+			a:after {
+				display:none;
+			}
+		}
+		a {
+			color:#333;
+			display: block;
+			font-size: 12px;
+			position: relative;
+			text-decoration: none;
+
+			&:after {
+				top:4px;
+				content:"";
+				width:12px;
+				height:10px;
+				@include icons-sprite(arrow-gray);
+				position: absolute;
+				right:-20px;
+				z-index: 2;
+			}
+		}
+	}
+}
+.filter {
+	background: #f1f2f3;
+	margin-bottom:30px;
+	overflow: hidden;
+	padding:10px 20px;
+	.inn {
+		padding:5px 0;
+	}
+	&.opened {
+		.btn-filter:after {
+			border-color: #30abfc  transparent transparent transparent;
+			top:8px;
+		}
+	}
+	.btn-filter {
+		background: none;
+		border:none;
+		color:#30abfc;
+		text-decoration: underline;
+		font-size: 14px;
+		padding:0;
+		position: relative;
+		&:after {
+			content:"";
+			border:4px solid;
+			border-color:transparent transparent transparent #30abfc;
+			right:-16px;
+			top:6px;
+			position: absolute;
+			z-index: 2;
+		}
+	}
+	.filter-section {
+		margin-bottom:5px;
+		.filter-name {
+			float:left;
+			margin-right: 10px;
+		}
+		.filter-fields {
+			.filter-item {
+				display: inline-block;
+				vertical-align: middle;
+				font-size: 12px;
+				margin:0 1px 5px;
+				position: relative;top: -5px;
+				padding:5px;
+				color:#333;
+				text-decoration: underline;
+				&.active, &:hover {
+					background: #fff;
+					color:#2facfc;
+					text-decoration: none;
+				}
+			}
+			.checkbox-box {
+				display: inline-block;
+				overflow: hidden;
+				position: relative;
+				font-size: 12px;
+				margin-right:8px;
+				input {
+					position: absolute;
+					top:-40px;
+				}
+				label {
+					display: inline-block;
+					.icon {
+						@include icons-sprite(checkbox);
+						width:15px;
+						height:16px;
+						display: inline-block;
+						margin-right:4px;
+						position: relative;
+						top:3px;
+					}
+				}
+				input:checked + label {
+					.icon {
+						@include icons-sprite(checkbox-checked);
+					}
+				}
+				input:disabled + label {
+					.icon {
+						@include icons-sprite(checkbox-disabled);
+					}
+				}
+			}
+		}
+		.sorting-buttons {
+			button {
+				text-align:center;
+				width: 25px;
+				height:25px;
+				background: none;
+				border:none;
+				top:-2px;
+				position: relative;
+				margin-right: 5px;
+				position: relative;
+				&:hover {
+					span {
+						display: block;
+					}
+				}
+				span {
+					position: absolute;
+					left:34px;
+					top:-2px;
+					display: none;
+					height:28px;
+					line-height: 26px;
+					display: none;
+					text-align: center;
+					color:#000;
+					font-size: 10px;
+					padding:0 5px;
+					border-radius: 5px;
+					border:1px solid #2facfc;
+					background: #fff;
+					width:80px;
+					z-index: 5;
+					&:before {
+						content:"";
+						border:5px solid;
+						border-color:transparent #30abfc transparent transparent ;
+						position: absolute;
+						top:8px;
+						left:-10px;
+						z-index: 1;
+					}
+					&:after {
+						content: "";
+						border: 4px solid;
+						border-color: transparent #fff transparent transparent;
+						position: absolute;
+						top: 9px;
+						left: -8px;
+						z-index: 2;
+					}
+				}
+				&:hover {
+					background: #fff;
+					.icons-arrow-down {
+						@include icons-sprite(arrow-down-a);
+					}
+					.icons-arrow-top {
+						@include icons-sprite(arrow-top-a);
+					}
+				}
+			}
+
+
+
+		}
+	}
+}
+.f20 {
+	h2 {
+		font-size: 20px;
+		margin-bottom: 25px;
+	}
+}
+.trigger-section {
+	position: absolute;
+	right:0;
+	top:-50px;
+	z-index: 3;
+	width:120px;
+	overflow: hidden;
+	input {
+		position: absolute;
+		top:-90px;
+	}
+	input:checked + label .icons-list {
+		@include icons-sprite(list-a);
+	}
+	input:checked + label .icons-blocks {
+		@include icons-sprite(blocks-a);
+	}
+	label {
+		cursor: pointer;
+		display: block;
+		width:32px;
+		height:32px;
+		line-height: 32px;
+		text-align: center;
+		background: #f1f2f3;
+		margin-left: 10px;
+		float:right;
+	}
+}
+

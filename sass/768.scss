@@ -42,9 +42,23 @@
 }
 .products {
 	margin: 0 10px 50px;
+	&.list-items .item .preview a {
+		.pic {
+			width: 180px;
+		}
+		.list-holder {
+			padding-left:200px;
+		}
+		.description-list {
+			padding-left: 200px;
+		}
+		.name {
+			padding-left:200px;
+		}
+	}
 	.item {
 		padding:60px 20px 40px;
-		width:31.3%;
+		width:23%;
 		margin:0 1% 2%;
 		min-height: 320px;
 		max-height: 320px;
@@ -120,7 +134,6 @@
 			margin-left:-60px;
 			left:50%;
 			button {
-				color:#fff;
 				height:38px;
 				line-height: 34px;
 				padding:0 20px;

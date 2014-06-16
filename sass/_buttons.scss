@@ -29,23 +29,23 @@
 		}
 	}
 	&.blue {
+		background-color: #30abfc;
+		@include filter-gradient(#30abfc, #00d3ff, vertical);
+		$experimental-support-for-svg: true;
+		@include background-image(linear-gradient(top,  #30abfc 0%,#00d3ff 100%));
 		border:2px solid #2b74c4;
 		border-radius: 5px;
-		background-color: #30abfc;
-		@include filter-gradient(#30abfc, #30abfc, vertical);
-		$experimental-support-for-svg: true;
-		@include background-image(linear-gradient(top,  #30abfc 0%,#00d3ff 4%,#00d3ff 50%,#30abfc 56%,#2989d8 56%,#30abfc 100%));
 		&:hover {
+			background-color: #30abfc;
+			@include filter-gradient(#30abfc, #30abfc, vertical);
+			$experimental-support-for-svg: true;
+			@include background-image(linear-gradient(top,  #30abfc 0%,#00d3ff 4%,#00d3ff 50%,#30abfc 56%,#2989d8 56%,#30abfc 100%));
+		}
+		&:active {
 			background-color: #558bc7;
 			@include filter-gradient(#558bc7, #558bc7, vertical);
 			$experimental-support-for-svg: true;
 			@include background-image(linear-gradient(top,  #558bc7 0%,#33aedb 4%,#558bc7 100%));
-		}
-		&:focus {
-			background-color: #30abfc;
-			@include filter-gradient(#30abfc, #00d3ff, vertical);
-			$experimental-support-for-svg: true;
-			@include background-image(linear-gradient(top,  #30abfc 0%,#00d3ff 100%));
 		}
 	}
 }

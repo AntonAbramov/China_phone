@@ -2,7 +2,7 @@ p {
 	margin-top:0;
 }
 body {
-	font-family: Arial;
+	font-family: helveticaneuecyrmedium, Arial, sans-serif;
 	font-size: 14px;
 	line-height: 18px;
 	color:#333;
@@ -13,6 +13,7 @@ h1,h2,h3,h4,h5,h6 {
 	margin-top:0;
 	color:#555;
 	line-height: 1;
+	font-family: helveticaneuecyrbold;
 }
 h1, h2 {
 	font-size: 24px;
@@ -23,6 +24,7 @@ h3, h4, h5 {
 	font-size: 18px;
 }
 strong {
+	font-family: helveticaneuecyrbold;
 }
 :focus {
 	outline: none;
@@ -99,7 +101,8 @@ input, textarea {
 		width:46%;
 		margin:0 2% 4%;
 		float:left;
-		border:2px solid #ccc;
+		border-radius: 3px;
+		border:2px solid #ececec;
 		padding:20px;
 		position: relative;
 		min-height: 300px;
@@ -143,13 +146,13 @@ input, textarea {
 		}
 		&.sold:before {
 			content:"Все проданы";
+			font-family: helveticaneuecyrbold;
 			height:36px;
 			line-height:36px;
 			position: absolute;
 			left:0px;
 			width:145px;
 			color:#333;
-			font-weight: bold;
 			text-align: center;
 			top:10px;
 			z-index: 2;
@@ -159,6 +162,7 @@ input, textarea {
 		}
 		&.last:before {
 			content:"Заканчивается";
+			font-family: helveticaneuecyrbold;
 			height:36px;
 			line-height:36px;
 			position: absolute;
@@ -166,7 +170,6 @@ input, textarea {
 			width:165px;
 			text-transform: uppercase;
 			color:#fff;
-			font-weight: bold;
 			text-align: center;
 			top:10px;
 			z-index: 2;
@@ -196,6 +199,7 @@ input, textarea {
 					margin-bottom: 10px;
 					font-size: 16px;
 					line-height: 16px;
+					font-family: helveticaneuecyrroman;
 					word-spacing: normal;
 					text-overflow: ellipsis;
 					overflow: hidden;
@@ -206,10 +210,13 @@ input, textarea {
 		}
 		.price {
 			text-align: center;
-			font-size: 16px;
-			line-height: 16px;
+			font-size: 14px;
+			line-height: 20px;
 			color:#000;
 			margin-bottom: 20px;
+			strong {
+				font-size: 20px;
+			}
 		}
 		.description,
 		.add-to-cart,
@@ -250,15 +257,16 @@ input, textarea {
 					.pic {
 						display: block;
 						text-align: center;
-						width: 180px;
+						width:90px;
 						position: absolute;
 						left: 0;
 						top: 10px;
 						bottom: auto;
 					}
 					.name {
+						font-family: helveticaneuecyrroman;
 						display: block;
-						padding-left:200px;
+						padding-left:100px;
 						white-space: normal;
 						text-overflow:inherit;
 						word-spacing: normal;
@@ -276,11 +284,13 @@ input, textarea {
 						font-size: 14px;
 						color:#333;
 						margin-bottom: 10px;
-						padding-left: 200px;
+						font-family: helveticaneuecyrroman;
+						padding-left: 100px;
 						text-align: left;
 						.list-more-detail {
 							text-decoration: underline;
 							display: block;
+							font-family: helveticaneuecyrroman;
 							color:#006699;
 							text-decoration: underline;
 							margin-top:10px;
@@ -317,157 +327,21 @@ input, textarea {
 				}
 			}
 			.list-holder {
-				padding-left: 200px;
+				padding-left: 100px;
 				.price {
 					height:30px;
 					line-height: 30px;
 				}
 			}
 		} //.item
+		.sold-out {
+			display: block;
+		}
 	}
+
 }
 
-.top-menu {
-	background-color: #30abfc;
-	@include filter-gradient(#30abfc, #00d3ff, vertical);
-	$experimental-support-for-svg: true;
-	@include background-image(linear-gradient(top,  #30abfc 0%,#00d3ff 100%));
-	height:40px;
-	display: none;
-	position: relative;
-	.catalog {
-		float:left;
-		button {
-			text-transform: uppercase; 
-			color:#fff;
-			height:40px;
-			line-height: 40px;
-			padding:0 55px 0 50px;
-			position: relative;
-			border:none;
-			font-size: 18px;
-			.icon {
-				 position: absolute;
-				top:17px;
-				right:30px;
-			}
-		}
-		&.catalog-show {
-			.catalog-menu {
-				display: block;
-			}
-		}
-		&.catalog-animation {
-			.catalog-menu {
-				top: 40px;
-				opacity: 1;
-			}
-		}
-		.catalog-menu {
-			position: absolute;
-			width:264px;
-			border:2px solid #f09607;
-			z-index: 10;
-			background: #fff;
-			border-radius: 3px;
-			@include transition();
-			opacity: 0;
-			display: none;
-			top:30px;
-			> li {
-				line-height:16px;
-				border-top:1px solid #f2f2f2;
-				position: relative;
-				&:first-child {
-					border-top:none;
-				}
-				> a {
-					@include transition(none);
-					text-decoration: none;
-					display: block;
-					line-height: 16px;
-					font-size: 16px;
-					color:#333333;
-					padding:12px 15px 12px;
-					&:hover {
-						background: #f09607;
-						color:#fff;
-					}
-				}
-				&:hover {
-					> a {
-						background: #f09607;
-						color:#fff;
-					}
-					ul {
-						display: block;
-					}
-				}
-				ul {
-					display: none;
-					position: absolute;
-					left:262px;
-					background: #fff;
-					box-shadow: 0 0 9px rgba(0,0,0, .5);
-					border:1px solid #ccc;
-					top:0;
-					width:200px;
-					padding:10px 10px 10px 25px;
-					&:before {
-						content: "";
-						border: 8px solid;
-						border-color: transparent #fff transparent transparent;
-						position: absolute;
-						left: -16px;
-						top: 13px;
-						z-index: 3;
-					}
-					a {
-						display: block;
-						padding:6px 0;
-						position: relative;
-						font-size: 14px;
-						color:#333;
-						text-decoration: none;
-						&:hover {
-							color:#00b0f6;
-							text-decoration: underline;
-							&:before {
-								display: block;
-							}
-						}
-						&:before {
-							content:"";
-							position: absolute;
-							top:11px;
-							left:-15px;
-							z-index: 2;
-							display:none;
-							width:8px;
-							background: #f09607;
-							height:8px;
-							border-radius: 10px;
-						}
-					}
-				}
-			}
-		}
-	}
-	nav {
-		float:right;
-		a {
-			display: block;
-			float:left;
-			height:40px;
-			line-height: 40px;
-			padding:0 20px;
-			border-left:1px solid #f1f3f6;
-			font-size:14px;
-			color:#ffffcc;
-			text-decoration: none;
-		}
-	}
-}
+
 .slider-holder {
 	display: none;
 }
@@ -570,6 +444,7 @@ input, textarea {
 			margin-bottom: 5px;
 		}
 		p {
+			font-family: helveticaneuecyrroman;
 			padding-bottom:20px;
 			margin:0;
 			color:#024f68;
@@ -578,6 +453,7 @@ input, textarea {
 	}
 }
 .index-container-text {
+	font-family: helveticaneuecyrroman;
 	color:#999;
 	font-size: 14px;
 	line-height: 22px;
@@ -625,6 +501,7 @@ input, textarea {
 			.description {
 				float:left;
 				width:60%;
+				font-family: helveticaneuecyrroman;
 			}
 		}
 		.bottom-section {
@@ -632,6 +509,7 @@ input, textarea {
 			padding:15px 20px;
 			margin:0 -20px;
 			a {
+				font-family: helveticaneuecyrroman;
 				text-transform: uppercase;
 				color:#3f5066;
 				font-size:14px;
@@ -971,7 +849,7 @@ input, textarea {
 					border-radius: 5px;
 					border:1px solid #2facfc;
 					background: #fff;
-					width:80px;
+					width:90px;
 					z-index: 5;
 					&:before {
 						content:"";
@@ -1050,7 +928,9 @@ input, textarea {
 	float:left;
 	font-size: 16px;
 	margin-left: 30px;
+	display: none;
 	a {
+		font-family: helveticaneuecyrroman;
 		font-size: 14px;
 		text-decoration: underline;
 		color:#2caefc;
@@ -1058,5 +938,10 @@ input, textarea {
 		&:hover {
 			text-decoration: none;
 		}
+	}
+}
+.add-to-cart {
+	button {
+		color:#fff;
 	}
 }

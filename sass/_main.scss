@@ -945,3 +945,242 @@ input, textarea {
 		color:#fff;
 	}
 }
+.pagination-container {
+	height:40px;
+	background: #f1f2f3;
+	padding:10px 20px;
+	margin-bottom: 40px;
+	ul {
+		float:right;
+		li {
+			margin-left: 5px;
+			float:left;
+			a {
+				display: block;
+				height:20px;
+				line-height: 20px;
+				font-style: 14px;
+				padding:0 5px;
+				color:#333;
+				text-decoration: none;
+			}
+			&.active {
+				a {
+					background: #2caefc;
+					color:#fff;
+					font-family: helveticaneuecyrbold;
+				}
+			}
+		}
+	}
+}
+
+.tovar-container {
+	margin-bottom:20px;
+	.tovar-title {
+		display: none;
+		font-size: 24px;
+		color:#000;
+		font-family: helveticaneuecyrbold;
+		margin-bottom: 20px;
+	}
+	.tovar-section {
+		padding-bottom: 40px;
+		.tovar-big-preview {
+			float:left;
+			position: relative;
+			.big-img {
+				width:150px;
+				img {
+					display: block;
+					max-width: 100%;
+				}
+			}
+		}
+		.tovar-info {
+			margin-left: 200px;
+			position: relative;
+			max-width: 340px;
+			.mobile-title {
+				font-size: 24px;
+				line-height: 24px;
+				color:#000;
+				font-family: helveticaneuecyrbold;
+				margin-bottom: 20px;
+			}
+			.tovar-price {
+				color:#35485f;
+				font-size: 46px;
+				line-height: 1;
+				margin-bottom: 20px;
+				span {
+					font-size: 36px;
+				}
+			}
+			.add-tobasker {
+				button {
+					color:#fff;
+					float:right;
+					height:70px;
+					font-size: 30px;
+					padding:20px;
+					background-color: #30abfc;
+					@include filter-gradient(#30abfc, #00d3ff, vertical);
+					$experimental-support-for-svg: true;
+					@include background-image(linear-gradient(top,  #30abfc 0%,#00d3ff 100%));
+					border-radius: 5px;
+					border:none;
+					&:hover {
+						background-color: #30abfc;
+						@include filter-gradient(#30abfc, #30abfc, vertical);
+						$experimental-support-for-svg: true;
+						@include background-image(linear-gradient(top,  #30abfc 0%,#00d3ff 4%,#00d3ff 50%,#30abfc 56%,#2989d8 56%,#30abfc 100%));
+					}
+					&:active {
+						background-color: #558bc7;
+						@include filter-gradient(#558bc7, #558bc7, vertical);
+						$experimental-support-for-svg: true;
+						@include background-image(linear-gradient(top,  #558bc7 0%,#33aedb 4%,#558bc7 100%));
+					}
+				}
+			}
+		}
+		.zoom, .video {
+			display: none;
+		}
+		.video {
+			&:hover {
+				.icon {
+					@include icons-sprite(video-a);
+				}
+			}
+		}
+		.zoom {
+			&:hover {
+				.icon {
+					@include icons-sprite(zoom-inn-a);
+				}
+			}
+		}
+	}
+	.tovar-preview {
+		padding:20px 15px;
+		margin:0 -15px;
+		border-top:1px solid #ccc;
+		border-bottom:1px solid #ccc;
+		.preview-list {
+			float:left;
+			li {
+				float:left;
+				margin-left:15px;
+				&:first-child {
+					margin-left: 0;
+				}
+				a {
+					border:1px solid #cccccc;
+					width:75px;
+					height:75px;
+					display: block;
+					padding:10px;
+					text-align: center;
+					img {
+						display: inline-block;
+						max-width: 100%;
+						max-height: 100%;
+					}
+				}
+			}
+		}
+		.tovar-video-btn {
+			float:right;
+			position: relative;
+			top:4px;
+
+		}
+	}
+	.sklad {
+		font-size: 14px;
+		color:#99cc33;
+		margin-bottom: 12px;
+		.icon {
+			margin-right: 5px;
+			position: relative;
+			top:2px;
+		}
+	}
+	.tovar-raiting {
+		margin-top: 20px;
+		.rait {
+			float:left;
+			width:100%;
+			li {
+				float:left;
+
+			}
+		}
+		.feedbacks-section {
+			color:#666;
+			font-family: helveticaneuecyrroman;
+			a {
+				color:#006699;
+				text-decoration: underline;
+				&:hover, &:focus {
+					text-decoration: none;
+				}
+			}
+		}
+	}
+
+}
+.tovar-raiting, .delivery, .sklad, .breadcrumbs {
+	display: none;
+}
+.delivery {
+	position: absolute;
+	right:50px;
+	top:0;
+	z-index: 2;
+	background: url(../img/delivery.png) no-repeat;
+	width:87px;
+	height:72px;
+	&:hover {
+		.delivery-tooltip {
+			display: block;
+		}
+	}
+	.delivery-tooltip {
+		display: none;
+		background: #fff;
+		border-radius: 15px;
+		border:1px solid #999;
+		position: absolute;
+		z-index: 3;
+		bottom:70px;
+		left:45px;
+		width:240px;
+		padding:10px;
+		&:before {
+			content:"";
+			z-index: 5;
+			@include icons-sprite(corner-arrow);
+			width:36px;
+			height:13px;
+			position: absolute;
+			bottom:-12px;
+			left:15px;
+		}
+		ul {
+			li{
+				font-size:12px;
+				padding-left:25px;
+				position: relative;
+				margin-bottom: 5px;
+				.icon {
+					position: absolute;
+					left:0;
+					top:2px;
+				}
+			}
+		}
+	}
+}

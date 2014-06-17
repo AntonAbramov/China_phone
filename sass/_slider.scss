@@ -1,0 +1,32 @@
+.side-navigation {
+	padding:10px 0;
+	background: #f1f2f3;
+	li {
+		margin:0 0 10px;
+		&.active {
+			a {
+				background: #f09607;
+				font-family: helveticaneuecyrbold;
+			}
+			a:before {
+				content:"";
+				@include icons-sprite(arrow-sidenav);
+				position: absolute;
+				right:17px;
+				top:11px;
+				z-index: 2;
+				width: 23px;
+				height:23px;
+			}
+		}
+		a {
+			display: block;
+			padding:10px 20px;
+			position: relative;
+			font-size: 18px;
+			line-height: 22px;
+			color:#000;
+			text-decoration: none;
+		}
+	}
+}

@@ -1,7 +1,6 @@
 .icons-up {
 	border: none;
 	position: fixed;
-	display: block;
 	z-index: 100;
 	right:50%;
 	margin-right:-540px;
@@ -9,4 +8,21 @@
 }
 .products {
 	margin: 0 -1% 50px;
+}
+
+.tovar-carusel {
+	li {
+		width: 220px!important;
+
+		height:330px;
+
+	}
+	.tovar-carusel-item {
+
+		width: 200px;
+		&:hover {
+			height: 310px;
+			width: 220px;
+		}
+	}
 }

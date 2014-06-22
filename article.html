@@ -1,0 +1,407 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Framework</title>
+	<meta charset="UTF-8"/>
+	<!--<meta name="viewport" content="width=device-width; initial-scale=1.0">-->
+	<meta name="author" content="Anton Abramov"/>
+	<meta name="keywords" content=""/>
+	<meta name="description" content=""/>
+	<link type="image/x-icon" rel="shortcut icon" href="favicon.ico"/>
+	<link rel="stylesheet" href="css/normalize.css" type="text/css" media="all"/>
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all"/>
+	<link rel="stylesheet" media="only screen and (min-width: 480px)" href="css/480.css">
+	<link rel="stylesheet" media="only screen and (min-width: 600px)" href="css/600.css">
+	<link rel="stylesheet" media="only screen and (min-width: 768px)" href="css/768.css">
+	<link rel="stylesheet" media="only screen and (min-width: 992px)" href="css/992.css">
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<header class="header cf">
+		<a title="Kitaiskie telefoni" href="/" class="logo">
+			<img src="img/logo.png" alt="Kitaiskie telefoni"  />
+		</a>
+		<div class="search">
+			<input type="search" placeholder="Поиск"/>
+			<button class="btn gray"><i class="icon icons-search"></i></button>
+		</div>
+		<a href="tel://7-123-456-7700" class="call-back">
+			<i class="icon icons-tel"></i>
+			<span class="tel">+7 (123) 456-77-00</span>
+			<span class="text">Перезвоните</span>
+		</a>
+		<div class="cart not-empty">
+			<div class="cart-btn">
+				<i class="icon icons-cart">
+					<span class="amount">3</span>
+				</i>
+				В корзине пусто
+				<div class="cart-count-items">3 товара</div>
+			</div>
+			<div class="cart-entity">
+				<div class="redirect">
+					<a href="#">Перейти в корзину</a>
+				</div>
+				<table class="popup-cart-table">
+					<thead>
+						<tr>
+							<td class="item"></td>
+							<td class="price">ЦЕНА</td>
+							<td class="count">К-ВО</td>
+							<td class="total">Сумма</td>
+							<td class="close"></td>
+						</tr>
+
+					</thead>
+					<tbody>
+						<tr >
+							<td rowspan="2" class="item brd-b"><a href="#"><img src="img/small-pic.jpg" alt=""/></a></td>
+							<td colspan="3" class="name">Hero H9500+ A9600 MTK6589</td>
+							<td rowspan="2" class="close brd-b"><span class="icon icons-close" title="закрыть"></span></td>
+						</tr>
+						<tr>
+							<td class="price brd-b"><strong>9400.00</strong> руб. </td>
+							<td class="count brd-b">
+								<span class="min-js icon icons-arrow-small-left"></span>
+								<input maxlength="3" type="text"/>
+								<span class="plus-js icons-arrow-small-right icon"></span></td>
+							<td class="total brd-b"><strong>9400.00</strong> руб. </td>
+						</tr>
+						<tr >
+							<td rowspan="2" class="item brd-b"><a href="#"><img src="img/small-pic.jpg" alt=""/></a></td>
+							<td colspan="3" class="name">Hero H9500+ A9600 MTK6589</td>
+							<td rowspan="2" class="close brd-b"><span class="icon icons-close" title="закрыть"></span></td>
+						</tr>
+						<tr>
+							<td class="price brd-b"><strong>9400.00</strong> руб. </td>
+							<td class="count brd-b">
+								<span class="min-js icon icons-arrow-small-left"></span>
+								<input maxlength="3" type="text"/>
+								<span class="plus-js icons-arrow-small-right icon"></span></td>
+							<td class="total brd-b"><strong>9400.00</strong> руб. </td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="total-amount">
+					<span class="container">
+						<strong>Общая сумма: 25 600 </strong>руб.
+					</span>
+				</div>
+				<div class="bottom-buttons">
+					<a href="#" class="order-click">Заказ “в 1 клик”</a>
+					<a href="#" class="order">Оформить заказ</a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<header class="header-mobile">
+		<div class="inn">
+			<div class="mobile-nav">
+				<nav>
+					<a href="#">test</a>
+					<a href="#">test</a>
+					<a href="#">test</a>
+				</nav>
+			</div>
+
+			<a href="#" class="icon icons-cart-active"><span class="amount">3</span></a>
+			<a class="logo" href="/"><img src="img/mobile-logo.png" alt=""/></a>
+		</div>
+		<div class="header-mid cf">
+			<div class="catalog">
+				<button class="btn orange">каталог</button>
+				<ul class="catalog-menu">
+					<li class="active">
+						<a href="#">Противоударные телефоны</a>
+						<ul>
+							<li>
+								<a href="#">Louis Vuitton 1978 Gold</a>
+							</li>
+							<li>
+								<a href="#">Louis Vuitton 1978 Gold</a>
+							</li>
+							<li>
+								<a href="#">Louis Vuitton 1978 Gold</a>
+							</li>
+							<li>
+								<a href="#">Louis Vuitton 1978 Gold</a>
+							</li>
+							<li>
+								<a href="#">Louis Vuitton 1978 Gold</a>
+							</li>
+							<li>
+								<a href="#">Louis Vuitton 1978 Gold</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Противоударные смартфоны</a>
+					</li>
+					<li>
+						<a href="#">Смартфоны Zopo</a>
+					</li>
+					<li>
+						<a href="#">Смартфоны ThL</a>
+					</li>
+					<li>
+						<a href="#">Смартфоны Xiaomi</a>
+						<ul>
+							<li>
+								<a href="#">Louis Vuitton 1978 Gold</a>
+							</li>
+							<li>
+								<a href="#">Louis Vuitton 1978 Gold</a>
+							</li>
+							<li>
+								<a href="#">Louis Vuitton 1978 Gold</a>
+							</li>
+							<li>
+								<a href="#">Louis Vuitton 1978 Gold</a>
+							</li>
+							<li>
+								<a href="#">Louis Vuitton 1978 Gold</a>
+							</li>
+							<li>
+								<a href="#">Louis Vuitton 1978 Gold</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Смартфоны Meizu</a>
+					</li>
+					<li>
+						<a href="#">Смартфоны Runbo</a>
+					</li>
+					<li>
+						<a href="#">Телефоны Vertu</a>
+					</li>
+					<li>
+						<a href="#">Телефоны Louis Vuitton</a>
+					</li>
+					<li>
+						<a href="#">Копии Samsung</a>
+					</li>
+					<li>
+						<a href="#">Копии iPhone</a>
+					</li>
+					<li>
+						<a href="#">Копии Nokia</a>
+					</li>
+					<li>
+						<a href="#">Шпионские штучки</a>
+					</li>
+					<li>
+						<a href="#">Автотовары</a>
+					</li>
+					<li>
+						<a href="#">teststeasdadsasd</a>
+					</li>
+					<li>
+						<a href="#">Аксессуары</a>
+					</li>
+					<li>
+						<a href="#">Новинки телефонов</a>
+					</li>
+					<li>
+						<a href="#">Телефоны со скидкой!</a>
+					</li>
+				</ul>
+			</div>
+			<div class="search">
+				<input type="search" placeholder="Поиск" />
+				<button class="btn gray"><i class="icon icons-search"></i></button>
+			</div>
+		</div>
+	</header>
+	<div class="main-inner">
+		<div class="top-menu">
+			<div class="catalog">
+				<button class="btn orange">каталог<i class="icon icons-arrow-bottom"></i></button>
+				<ul class="catalog-menu">
+					<li>
+						<a href="#">Противоударные телефоны</a>
+						<ul>
+							<li>
+								<a href="#">Louis Vuitton 1978 Gold</a>
+							</li>
+							<li>
+								<a href="#">Louis Vuitton 1978 Gold</a>
+							</li>
+							<li>
+								<a href="#">Louis Vuitton 1978 Gold</a>
+							</li>
+							<li>
+								<a href="#">Louis Vuitton 1978 Gold</a>
+							</li>
+							<li>
+								<a href="#">Louis Vuitton 1978 Gold</a>
+							</li>
+							<li>
+								<a href="#">Louis Vuitton 1978 Gold</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Противоударные смартфоны</a>
+					</li>
+					<li>
+						<a href="#">Смартфоны Zopo</a>
+					</li>
+					<li>
+						<a href="#">Смартфоны ThL</a>
+					</li>
+					<li>
+						<a href="#">Смартфоны Xiaomi</a>
+						<ul>
+							<li>
+								<a href="#">Louis Vuitton 1978 Gold</a>
+							</li>
+							<li>
+								<a href="#">Louis Vuitton 1978 Gold</a>
+							</li>
+							<li>
+								<a href="#">Louis Vuitton 1978 Gold</a>
+							</li>
+							<li>
+								<a href="#">Louis Vuitton 1978 Gold</a>
+							</li>
+							<li>
+								<a href="#">Louis Vuitton 1978 Gold</a>
+							</li>
+							<li>
+								<a href="#">Louis Vuitton 1978 Gold</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Смартфоны Meizu</a>
+					</li>
+					<li>
+						<a href="#">Смартфоны Runbo</a>
+					</li>
+					<li>
+						<a href="#">Телефоны Vertu</a>
+					</li>
+					<li>
+						<a href="#">Телефоны Louis Vuitton</a>
+					</li>
+					<li>
+						<a href="#">Копии Samsung</a>
+					</li>
+					<li>
+						<a href="#">Копии iPhone</a>
+					</li>
+					<li>
+						<a href="#">Копии Nokia</a>
+					</li>
+					<li>
+						<a href="#">Шпионские штучки</a>
+					</li>
+					<li>
+						<a href="#">Автотовары</a>
+					</li>
+					<li>
+						<a href="#">teststeasdadsasd</a>
+					</li>
+					<li>
+						<a href="#">Аксессуары</a>
+					</li>
+					<li>
+						<a href="#">Новинки телефонов</a>
+					</li>
+					<li>
+						<a href="#">Телефоны со скидкой!</a>
+					</li>
+				</ul>
+			</div>
+			<nav class="cf">
+				<a href="#">Доставка и оплата</a>
+				<a href="#">Гарантии</a>
+				<a href="#">Вопросы / Ответы</a>
+				<a href="#">Контакты</a>
+			</nav>
+		</div>
+		<div class="wrapper cf">
+			<div class="breadcrumbs">
+				<ul>
+					<li>
+						<a href="#">Главная</a>
+					</li>
+					<li>
+						<a href="#">Каталог</a>
+					</li>
+					<li class="active">
+						<a href="#">Телефоны Louis Vuitton </a>
+					</li>
+				</ul>
+			</div>
+			<article class="article-post">
+				<a href="#" class="article-title">
+					КИТАЙСКАЯ ВЕРСИЯ HTC ONE НА 2 СИМ-КАРТЫ
+				</a>
+				<img class="left" src="" alt=""/>
+				<div class="article-special-text"></div>
+				div.article-
+			</article>
+		</div>
+
+	</div>
+	<footer class="footer">
+		<div class="copyright">
+			&copy; Китайские телефоны, 2014<br/>
+			Все права защищены.
+		</div>
+		<div class="map">
+			<a href="#">Карта сайта</a>
+		</div>
+		<div class="sosials">
+			<p>Следуйте за нами в социальных сетях:</p>
+			<ul>
+				<li>
+					<a href="#">
+						<i class="icon icons-youtube"></i>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="icon icons-tw"></i>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="icon icons-vk"></i>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="icon icons-mail"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+	</footer>
+	<footer class="footer-mobile">
+		<div class="following">
+			<p class="following-text">Следуйте за нами в социальных сетях:</p>
+			<ul class="sosial-list">
+				<li><a href="#"><i class="icon mobile-youtube"></i></a></li>
+				<li><a href="#"><i class="icon mobile-tw"></i></a></li>
+				<li><a href="#"><i class="icon mobile-vk"></i></a></li>
+				<li><a href="#"><i class="icon mobile-mail"></i></a></li>
+			</ul>
+		</div>
+		<div class="orange-button">
+			<a href="#" class="btn orange"><i class="icon mobile-cell"></i>+7 (123) 456-77-00</a>
+		</div>
+	</footer>
+	<button class="icon icons-up">scroll up</button>
+	<script src="js/jquery-2.0.3.min.js"></script>
+	<script src="js/jquery.slides.min.js"></script>
+	<script src="js/mousewheel.js"></script>
+	<script src="js/jcarusellite.js"></script>
+	<script src="js/init.js"></script>
+</body>
+</html>

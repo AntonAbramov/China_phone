@@ -1839,9 +1839,9 @@ input[type='password'] {
 	border: none;
 }
 
-.price,
-.amount,
-.total {
+td.price,
+td.amount,
+td.total {
 	display: none;
 }
 
@@ -2103,5 +2103,15 @@ input[type='password'] {
 		}
 	}
 }
-
+.article-post {
+	margin-bottom: 40px;
+	.article-title {
+		font-size: 48px;
+		font-family: helveticaneuecyrbold;
+		color:#35485f;
+		display: block;
+		margin-bottom: 20px;
+		line-height: 44px;
+	}
+}
 

@@ -41,7 +41,7 @@ strong {
 }
 
 img.left {
-	margin-right: 10px;
+	margin-right: 20px;
 	margin-bottom: 5px;
 }
 
@@ -753,7 +753,7 @@ input[type='password'] {
 		}
 		&.active {
 			a {
-				color: #006699;
+				color: #1b6d9d;
 				text-decoration: underline;
 			}
 			a:after {
@@ -1917,7 +1917,7 @@ td.total {
 }
 
 .promo-form {
-	display: none;
+//	display: none;
 	@extend .cf;
 	.promo-form-section {
 		.form-field {
@@ -1984,15 +1984,16 @@ td.total {
 	padding:20px;
 	background: #f6f7f8;
 	margin-bottom: 20px;
-	display: none;
+//	display: none;
 	.title {
-		float:left;
-		width:140px;
 		font-family: helveticaneuecyrroman;
+		margin-bottom: 10px;
+		padding-bottom: 10px;
+		border-bottom:1px solid #ccc;
+		font-size: 24px;
 	}
 	.container {
-		padding-left: 180px;
-		padding-right: 250px;
+		padding-right: 140px;
 		.radio {
 			display: block;
 			line-height: 20px;
@@ -2003,36 +2004,16 @@ td.total {
 
 			.tooltip-info {
 				position: absolute;
-				right:-250px;
+				right:-140px;
 				top:0px;
 				z-index: 2;
-				padding:5px 20px;
+				padding: 10px;
 				background: #fff;
 				border-radius: 5px;
 				border:1px solid #ddddde;
 				font-family: helveticaneuecyrroman;
-				width:210px;
+				width:130px;
 				font-size: 18px;
-				&:before {
-					content:"";
-					border:8px solid;
-					border-color:transparent  #ddddde  transparent transparent;
-					position: absolute;
-					left:-16px;
-					top:50%;
-					margin-top:-8px;
-					z-index: 1;
-				}
-				&:after {
-					content:"";
-					border:7px solid;
-					border-color: transparent #fff transparent transparent;
-					position: absolute;
-					left:-14px;
-					top:50%;
-					margin-top:-7px;
-					z-index: 2;
-				}
 				span {
 					font-size: 14px;
 					display: block;
@@ -2053,13 +2034,14 @@ td.total {
 }
 .payment-delivery-section .container .radio input:checked + .tooltip-info {
 	border-color:#1fb9fd;
-	&:before {
-		border-color:transparent #1fb9fd transparent transparent;
-	}
+	background: #2caffc;
+	color:#fff;
+
 }
 .basket-total-total {
-	display: none;
+//	display: none;
 	margin-bottom: 20px;
+	padding-right: 10px;
 	text-align: right;
 	color:#000;
 	.total-amount-price {
@@ -2104,14 +2086,40 @@ td.total {
 	}
 }
 .article-post {
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 	.article-title {
-		font-size: 48px;
+		font-size: 24px;
 		font-family: helveticaneuecyrbold;
 		color:#35485f;
 		display: block;
 		margin-bottom: 20px;
-		line-height: 44px;
+		line-height: 24px;
+	}
+	.article-special-text {
+		margin-bottom: 30px;
+		font-size: 18px;
+		font-family: helveticaneuecyrbold;
+		line-height: 24px;
+	}
+	.article-simmple-text {
+		margin-bottom: 30px;
+		font-size: 16px;
+		font-family: helveticaneuecyrroman;
+		line-height: 30px;
 	}
 }
 
+.recomandation-reading {
+	padding:20px;
+	background: #f6f7f8;
+	margin-bottom: 40px;
+	line-height: 24px;
+	a {
+		color:#1b6d9d;
+	}
+	h3 {
+		font-size: 16px;
+		line-height: 24px;
+		margin-bottom: 20px;
+	}
+}

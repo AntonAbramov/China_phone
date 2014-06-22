@@ -371,3 +371,51 @@ td.total {
 .confirm-order{
 	display: block;
 }
+.payment-delivery-section {
+	.title {
+		float:left;
+		width:140px;
+		border:none;
+		margin:0;
+		font-size: 14px;
+		padding:0;
+	}
+	.container  {
+		padding-left: 180px;
+		padding-right: 250px;
+		.radio {
+			.tooltip-info {
+				right:-250px;
+				width:210px;
+				padding:5px 20px;
+				&:before {
+					content:"";
+					border:8px solid;
+					border-color:transparent  #ddddde  transparent transparent;
+					position: absolute;
+					left:-16px;
+					top:50%;
+					margin-top:-8px;
+					z-index: 1;
+				}
+				&:after {
+					content:"";
+					border:7px solid;
+					border-color: transparent #fff transparent transparent;
+					position: absolute;
+					left:-14px;
+					top:50%;
+					margin-top:-7px;
+					z-index: 2;
+				}
+			}
+		}
+	}
+}
+.payment-delivery-section .container .radio input:checked + .tooltip-info {
+	background: #fff;
+	color:#000;
+	&:before {
+		border-color:transparent #1fb9fd transparent transparent;
+	}
+}

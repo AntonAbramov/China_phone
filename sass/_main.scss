@@ -35,14 +35,16 @@ strong {
 :focus {
 	outline: none;
 }
+
 .left {
-	float:left;
+	float: left;
 }
 
 img.left {
 	margin-right: 10px;
 	margin-bottom: 5px;
 }
+
 a {
 	-webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
@@ -55,9 +57,11 @@ a {
 		text-decoration: none;
 	}
 }
+
 .mr20 {
 	margin-right: 20px;
 }
+
 textarea {
 	resize: none;
 	border: 2px solid #e3e4e8;
@@ -111,18 +115,20 @@ input, textarea {
 		box-shadow: none;
 	}
 }
+
 input[type='text'],
 input[type='email'],
 input[type='password'] {
-	height:24px;
-	padding:2px 10px;
+	height: 30px;
+	padding: 5px 10px;
 	line-height: 20px;
-	border:1px solid #d3d3d3;
+	border: 1px solid #d3d3d3;
 	border-radius: 4px;
 	&:focus {
-		border-color:#2dadfc;
+		border-color: #2dadfc;
 	}
 }
+
 .main-inner {
 	padding: 0 15px;
 	margin: 0 auto;
@@ -1265,10 +1271,10 @@ input[type='password'] {
 		}
 		.description-block-title {
 			h2 {
-				color:#2dadfc;
+				color: #2dadfc;
 				&:after {
-					width:18px;
-					height:10px;
+					width: 18px;
+					height: 10px;
 					@include icons-sprite(mob_arrow-bottom);
 				}
 			}
@@ -1304,9 +1310,9 @@ input[type='password'] {
 	@extend .cf;
 	li {
 		padding: 10px;
-		width: 260px!important;
+		width: 260px !important;
 		float: left;
-		height:310px!important;
+		height: 310px !important;
 	}
 	.tovar-carusel-item {
 		border: 1px solid #ccc;
@@ -1325,7 +1331,7 @@ input[type='password'] {
 				display: block;
 				button {
 					border: none;
-					padding:2px 10px;
+					padding: 2px 10px;
 				}
 			}
 		}
@@ -1376,17 +1382,19 @@ input[type='password'] {
 		}
 	}
 }
+
 .carusel-list-holder {
 	padding: 0 20px;
 }
+
 .desciption-block-content {
-	padding:0 20px;
+	padding: 0 20px;
 
 	position: relative;
 	margin-bottom: 40px;
 	h3 {
 		font-size: 24px;
-		color:#000;
+		color: #000;
 	}
 	.prev, .next {
 		position: absolute;
@@ -1415,6 +1423,7 @@ input[type='password'] {
 		padding: 10px 20px;
 	}
 }
+
 .option-lists {
 	margin-bottom: 40px;
 	li {
@@ -1433,7 +1442,7 @@ input[type='password'] {
 		font-family: helveticaneuecyrroman;
 		font-size: 16px;
 		span:first-child {
-			float:left;
+			float: left;
 			display: block;
 			background: #fff;
 			padding-right: 5px;
@@ -1442,31 +1451,33 @@ input[type='password'] {
 		&.show-all-links {
 			background: none;
 			a {
-				color:#2facfc;
+				color: #2facfc;
 			}
 		}
 	}
 }
+
 .technical-option li span:first-child + span {
-	float:right;
+	float: right;
 	display: block;
 	background: #fff;
-	padding-left:5px;
+	padding-left: 5px;
 }
 
 .star-list {
 	@extend .cf;
 	li {
-		float:left;
+		float: left;
 	}
 }
+
 .feedback-header {
 	@extend .cf;
 	background: #f1f2f3;
-	padding:10px 15px;
+	padding: 10px 15px;
 	.feedback-mark-section {
-		float:left;
-		margin-right:60px;
+		float: left;
+		margin-right: 60px;
 		@extend .cf;
 		line-height: 32px;
 		strong {
@@ -1474,60 +1485,61 @@ input[type='password'] {
 		}
 		ul {
 
-			float:left;
+			float: left;
 			margin-right: 20px;
 			li {
-				padding-top:2px;
+				padding-top: 2px;
 			}
 		}
 
 	}
 	.feedback-recommendation {
-		float:Left;
+		float: Left;
 		.icons-well {
 			margin-right: 5px;
 			position: relative;
-			top:2px;
+			top: 2px;
 		}
 	}
 	.add-feedback {
-		float:right;
-		padding:8px 15px;
-		color:#fff;
+		float: right;
+		padding: 8px 15px;
+		color: #fff;
 		text-decoration: none;
 	}
 	.btn.blue {
-		border:none;
+		border: none;
 	}
 }
+
 .feedback-box {
-	padding:15px 0;
-	border-bottom:1px solid #ccc;
+	padding: 15px 0;
+	border-bottom: 1px solid #ccc;
 	.heading {
 		@extend .cf;
-		margin:0 0 10px;
+		margin: 0 0 10px;
 		.name {
-			float:left;
+			float: left;
 			font-size: 18px;
 		}
 		.star-list {
-			float:left;
+			float: left;
 			margin-left: 20px;
 			margin-right: 25px;
 		}
 		.feedback-recommendation {
-			float:left;
-			padding-left:30px;
+			float: left;
+			padding-left: 30px;
 			position: relative;
 			.icons-well {
 				position: absolute;
-				left:0;
-				top:-3px;
+				left: 0;
+				top: -3px;
 			}
 		}
 		.date {
-			float:right;
-			color:#999;
+			float: right;
+			color: #999;
 			font-family: helveticaneuecyrroman;
 		}
 
@@ -1538,28 +1550,30 @@ input[type='password'] {
 	.bottom {
 		@extend .cf;
 		.answer {
-			float:left;
-			color:#0099ff;
+			float: left;
+			color: #0099ff;
 			margin-right: 20px;
 		}
 	}
 }
+
 .add-asnwer-btn {
-	padding:10px 20px;
+	padding: 10px 20px;
 	line-height: 14px;
-	color:#fff;
+	color: #fff;
 	background-color: #33aedb;
 	@include filter-gradient(#548cc8, #33aedb, vertical);
 	$experimental-support-for-svg: true;
 	@include background-image(linear-gradient(top, #548cc8 0%, #33aedb 100%));
-	border:none;
+	border: none;
 	border-radius: 5px;
 }
+
 .form-feedback {
-	margin-top:20px;
-	padding:20px;
+	margin-top: 20px;
+	padding: 20px;
 	background: #f1f2f3;
-	border:1px solid #ccc;
+	border: 1px solid #ccc;
 	position: relative;
 	&:before {
 		content: "";
@@ -1568,7 +1582,7 @@ input[type='password'] {
 		position: absolute;
 		top: -21px;
 		left: 20px;
-		z-index:1
+		z-index: 1
 	}
 	&:after {
 		z-index: 2;
@@ -1586,23 +1600,23 @@ input[type='password'] {
 		line-height: 26px;
 	}
 	.form-feedback-buttons {
-		margin-top:20px;
+		margin-top: 20px;
 		.cancel {
-			border:1px solid #3399ff;
+			border: 1px solid #3399ff;
 			background: #fff;
-			color:#3399ff;
+			color: #3399ff;
 		}
 		.send {
 			background: #07cdff;
 			@include filter-gradient(#07cdff, #3db0fb, vertical);
 			$experimental-support-for-svg: true;
 			@include background-image(linear-gradient(top, #07cdff 0%, #3db0fb 100%));
-			border:none;
-			color:#fff;
+			border: none;
+			color: #fff;
 		}
 		.cancel, .send {
-			height:30px;
-			padding:0 25px;
+			height: 30px;
+			padding: 0 25px;
 			font-size: 14px;
 			margin-right: 15px;
 			line-height: 28px;
@@ -1610,11 +1624,12 @@ input[type='password'] {
 		}
 	}
 }
+
 .form-feedback-row {
 	@extend .cf;
 	margin-bottom: 10px;
 	.star-list {
-		float:left;
+		float: left;
 		margin-left: 20px;
 	}
 	label {
@@ -1627,20 +1642,22 @@ input[type='password'] {
 	input[type='text'],
 	input[type='email'],
 	input[type='password'] {
-		width:230px;
+		width: 230px;
 	}
 	textarea {
-		width:100%;
-		margin-top:5px;
+		width: 100%;
+		margin-top: 5px;
 	}
 
 }
+
 .recomend-item {
 	margin-bottom: 5px;
 }
+
 .obzor {
 	.pic {
-		float:left;
+		float: left;
 		margin-right: 20px;
 		img {
 			display: block;
@@ -1651,45 +1668,49 @@ input[type='password'] {
 		margin-bottom: 15px;
 	}
 	.compare-all {
-		color:#2facfc;
+		color: #2facfc;
 		font-size: 16px;
 	}
 }
+
 .basket {
-	margin:0 -20px;
+	margin: 0 -20px;
 	table {
-		width:100%;
+		width: 100%;
 		tr {
-			border-bottom:1px solid #f1f1f1;
+			border-bottom: 1px solid #f1f1f1;
+		}
+		td {
+			padding: 15px 10px;
 		}
 	}
 	.img-preview {
-		width:110px;
-		padding:15px 10px;
+		width: 110px;
+
 		img {
 			max-width: 100%;
 		}
 	}
 	.close {
-		width:60px;
+		width: 60px;
 		button {
 			background: none;
-			border:none;
+			border: none;
 		}
 	}
 	.info {
-		padding:20px 10px;
+		padding: 20px 10px;
 		.title {
 			font-size: 24px;
 			line-height: 26px;
 			margin-bottom: 5px;
 			a {
-				color:#35485f
+				color: #35485f
 			}
 
 		}
 		.price-mobile {
-			color:#000;
+			color: #000;
 			font-size: 18px;
 			font-family: helveticaneuecyrbold;
 			margin-bottom: 10px;
@@ -1697,32 +1718,35 @@ input[type='password'] {
 		.amount-mobile {
 			font-family: helveticaneuecyrroman;
 			font-size: 18px;
-			.input-count {
-				margin-left: 5px;
-				input {
-					width:70px;
-					display: inline-block;
-					padding:0 5px;
-					text-align: right;
-					margin:0 5px;
-					height:30px;
-					line-height: 30px;
-				}
-				.icon {
-					position: relative;
-					top:3px;
-					cursor: pointer;
-				}
-			}
+
+		}
+	}
+	.input-count {
+		margin-left: 5px;
+		input {
+			width: 50px;
+			display: inline-block;
+			padding: 0 5px;
+			font-size: 18px;
+			text-align: right;
+			margin: 0 5px;
+			height: 30px;
+			line-height: 30px;
+		}
+		.icon {
+			position: relative;
+			top: 7px;
+			cursor: pointer;
 		}
 	}
 	.summa {
 		background: #edf0f2;
-		padding:10px 20px;
+		padding: 10px 20px;
 		font-size: 14px;
+		text-align: right;
 		line-height: 24px;
 		margin-bottom: 20px;
-		margin-bottom:15px;
+		margin-bottom: 15px;
 		span {
 			font-family: helveticaneuecyrroman;
 		}
@@ -1732,48 +1756,72 @@ input[type='password'] {
 		sub {
 			font-size: 14px;
 			position: relative;
-			top:0px;
+			top: 0px;
 		}
 	}
 	.promo-code {
 		@extend .cf;
-		padding:10px 20px;
-		border-top:1px solid #f1f1f1;
-		border-bottom:1px solid #f1f1f1;
-		margin-bottom:20px;
-		span {
+		padding: 10px 20px;
+		border-top: 1px solid #f1f1f1;
+		border-bottom: 1px solid #f1f1f1;
+		margin-bottom: 20px;
+		line-height: 30px;
+		> span {
 			display: inline-block;
 			width: 28%;
 
 		}
-		input {
-			width:70%;
-			float:right;
+		> input {
+			width: 70%;
+			float: right;
+			height: 30px;
+			padding: 5px 10px;
 		}
 	}
+	.price, .total {
+		font-size: 18px;
+		font-family: helveticaneuecyrbold;
+		&:after {
+			content: 'руб.';
+			font-family: helveticaneuecyrroman;
+			font-size: 14px;
+		}
+	}
+	.amount {
+		min-width: 145px;
+	}
 }
+
 .basket-mobile-buttons {
-	width:300px;
-	margin:0 auto 20px;
+	width: 300px;
+	margin: 0 auto 20px;
+	> .cf {
+		width: 270px;
+		margin: 0 auto;
+	}
 }
+
 .recount {
-	border:1px solid #3399ff;
+	border: 1px solid #3399ff;
 	background: #fff;
-	color:#3399ff;
+	color: #3399ff;
+	margin-right: 15px;
 }
+
 .confirm {
 	background: #07cdff;
 	@include filter-gradient(#07cdff, #3db0fb, vertical);
 	$experimental-support-for-svg: true;
 	@include background-image(linear-gradient(top, #07cdff 0%, #3db0fb 100%));
-	border:none;
-	color:#fff;
+	border: none;
+	color: #fff;
 }
+
 .recount, .confirm {
-	height:30px;
-	padding:0 12px;
+	height: 30px;
+	padding: 0 12px;
 	font-size: 14px;
-	margin-right: 15px;
+
 	line-height: 28px;
 	border-radius: 3px;
 	margin-bottom: 20px;
@@ -1781,14 +1829,14 @@ input[type='password'] {
 
 .continue {
 	text-align: center;
-	color:#333;
+	color: #333;
 	background: #d5dfe5;
 	border-radius: 3px;
-	height:30px;
-	padding:0 25px;
+	height: 30px;
+	padding: 0 25px;
 	line-height: 28px;
-	width:100%;
-	border:none;
+	width: 100%;
+	border: none;
 }
 
 .price,
@@ -1796,3 +1844,264 @@ input[type='password'] {
 .total {
 	display: none;
 }
+
+.following-items {
+	display: none;
+	margin: 40px 0;
+	padding:0 20px;
+	h3 {
+		font-size: 16px;
+		margin-bottom: 20px;
+	}
+	ol {
+		padding-right: 20px;
+		li {
+			margin-bottom: 10px;
+			color: #000;
+			padding-right: 130px;
+			position: relative;
+			.title {
+				color: #0066cc;
+				display: inline-block;
+			}
+			.price {
+				float: right;
+				width: 120px;
+				display: inline-block;
+				&:after {
+					display: none;
+				}
+			}
+			button {
+				position: absolute;
+				z-index: 2;
+				right: 0;
+				top: 0px;
+				border: none !important;
+				color: #fff;
+				height: 24px;
+				line-height: 24px;
+				font-size: 12px;
+				padding: 0 10px;
+			}
+		}
+	}
+}
+
+.promo-question {
+	background: url(../img/question.png) no-repeat;
+	width: 12px;
+	height: 12px;
+	display: inline-block;
+	position: absolute;
+	top: 3px;
+	right: 0px;
+	display: none;
+}
+
+.promo-apply {
+	display: none;
+	float: left;
+	margin-left: 20px;
+	height: 30px;
+	line-height: 28px;
+	padding: 0 15px;
+	border: 1px solid #999;
+	border-radius: 4px;
+	color: #1fb9fd;
+	font-size: 16px;
+	background-color: #f4f8f8;
+	@include filter-gradient(#e6ecec, #f4f8f8, vertical);
+	$experimental-support-for-svg: true;
+	@include background-image(linear-gradient(top, #e6ecec 0%, #f4f8f8 100%));
+}
+
+.promo-form {
+	display: none;
+	@extend .cf;
+	.promo-form-section {
+		.form-field {
+			@extend .cf;
+			margin-bottom: 15px;
+			padding:0 20px;
+			label {
+				float:left;
+				display: inline-block;
+				line-height: 20px;
+				padding-top: 5px;
+				width:30%;
+				sup {
+					color:red;
+				}
+			}
+			.control-field {
+				float:right;
+				width:70%;
+				position: relative;
+				&:hover {
+					.form-field-tooltip {
+						display: block;
+					}
+				}
+				input, textarea {
+					width:100%;
+				}
+				textarea {
+					height:100px;
+				}
+				.form-field-tooltip {
+					display: none;
+					position: absolute;
+					top:-20px;
+					right:0px;
+					padding:5px 10px;
+					background: #fff;
+
+					border:2px solid #90d3fd;
+					border-radius: 4px;
+					color:#333;
+					font-size: 14px;
+					line-height: 20px;
+					font-family: helveticaneuecyrroman;
+					z-index: 2;
+					&:after {
+						content:"";
+						width:11px;
+						background: url(../img/corner-blue.png) no-repeat;
+						height:10px;
+						position: absolute;
+						bottom:-9px;
+						left:10px;
+						z-index: 2;
+					}
+				}
+			}
+		}
+
+	}
+}
+.payment-delivery-section {
+	padding:20px;
+	background: #f6f7f8;
+	margin-bottom: 20px;
+	display: none;
+	.title {
+		float:left;
+		width:140px;
+		font-family: helveticaneuecyrroman;
+	}
+	.container {
+		padding-left: 180px;
+		padding-right: 250px;
+		.radio {
+			display: block;
+			line-height: 20px;
+			margin-bottom: 5px;
+			position: relative;
+			cursor: pointer;
+			font-size: 16px;
+
+			.tooltip-info {
+				position: absolute;
+				right:-250px;
+				top:0px;
+				z-index: 2;
+				padding:5px 20px;
+				background: #fff;
+				border-radius: 5px;
+				border:1px solid #ddddde;
+				font-family: helveticaneuecyrroman;
+				width:210px;
+				font-size: 18px;
+				&:before {
+					content:"";
+					border:8px solid;
+					border-color:transparent  #ddddde  transparent transparent;
+					position: absolute;
+					left:-16px;
+					top:50%;
+					margin-top:-8px;
+					z-index: 1;
+				}
+				&:after {
+					content:"";
+					border:7px solid;
+					border-color: transparent #fff transparent transparent;
+					position: absolute;
+					left:-14px;
+					top:50%;
+					margin-top:-7px;
+					z-index: 2;
+				}
+				span {
+					font-size: 14px;
+					display: block;
+				}
+			}
+			input {
+				position: absolute;
+				left:-30px;
+				top:2px;
+				font-size: 18px;
+				font-family: helveticaneuecyrbold;
+			}
+		}
+		p {
+			font-family: helveticaneuecyrroman;
+		}
+	}
+}
+.payment-delivery-section .container .radio input:checked + .tooltip-info {
+	border-color:#1fb9fd;
+	&:before {
+		border-color:transparent #1fb9fd transparent transparent;
+	}
+}
+.basket-total-total {
+	display: none;
+	margin-bottom: 20px;
+	text-align: right;
+	color:#000;
+	.total-amount-price {
+		float: right;
+		color:#000;
+		margin-top: 5px;
+		background: #edf0f2;
+		font-size: 24px;
+		font-family: helveticaneuecyrbold;
+		line-height: 24px;
+		padding:5px 10px;
+		&:after {
+			content:"руб.";
+			font-size:18px;
+
+		}
+	}
+}
+.confirm-order {
+	display: none;
+	padding-left: 200px;
+	margin-bottom: 30px;
+	button {
+		height:40px;
+		padding:10px 20px;
+		line-height: 20px;
+		color:#fff;
+		font-size: 16px;
+		font-family: helveticaneuecyrbold;
+		border-radius: 4px;
+		border:none;
+		background-color: #03d1ff;
+		@include filter-gradient(#03d1ff, #30abfc, vertical);
+		$experimental-support-for-svg: true;
+		@include background-image(linear-gradient(top, #03d1ff 0%, #30abfc 100%));
+		&:hover, &:focus {
+			background-color: #30abfc;
+			@include filter-gradient(#30abfc, #03d1ff, vertical);
+			$experimental-support-for-svg: true;
+			@include background-image(linear-gradient(top, #30abfc 0%, #03d1ff 100%));
+		}
+	}
+}
+
+

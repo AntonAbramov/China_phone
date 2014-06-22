@@ -7,6 +7,7 @@ $(document).ready(function () {
 	carusel();
 	toggleShowMobile();
 	scrollTopFunction();
+	basketPage();
 });
 
 $(window).resize(function () {
@@ -203,4 +204,10 @@ scrollTopFunction = function () {
 		}, 600);
 		return false;
 	});
+}
+
+basketPage = function(){
+	$('td.close').find('button').on('click', function(){
+		$(this).parents('tr').remove();
+	})
 }

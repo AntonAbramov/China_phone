@@ -346,9 +346,19 @@
 								</span>
 							</div>
 						</td>
-						<td class="price"></td>
-						<td class="amount"></td>
-						<td class="total"></td>
+						<td class="price">
+							9400.00
+						</td>
+						<td class="amount">
+							<span class="input-count">
+								<span class="min icon icons-minus"></span>
+								<input type="text"/>
+								<span class="up icon icons-plus"></span>
+							</span>
+						</td>
+						<td class="total">
+							18 800.00
+						</td>
 						<td class="close">
 							<button>
 								<i class="icon icons-close-popup"></i>
@@ -375,9 +385,19 @@
 								</span>
 							</div>
 						</td>
-						<td class="price"></td>
-						<td class="amount"></td>
-						<td class="total"></td>
+						<td class="price">
+							9400.00
+						</td>
+						<td class="amount">
+							<span class="input-count">
+								<span class="min icon icons-minus"></span>
+								<input type="text"/>
+								<span class="up icon icons-plus"></span>
+							</span>
+						</td>
+						<td class="total">
+							18 800.00
+						</td>
 						<td class="close">
 							<button>
 								<i class="icon icons-close-popup"></i>
@@ -388,9 +408,128 @@
 				<div class="summa">
 					Сумма <span>(без учета доставки)</span>    <strong>18 800</strong> <sub>руб.</sub>
 				</div>
+				<div class="following-items">
+					<h3>Сопутствующие товары:</h3>
+					<ol>
+						<li>
+							<a href="#" class="title">Kingston microSDHC 16Gb class10+SD (SDC10/16 GB)</a> <span class="price">990 руб</span>
+							<button class="btn blue">В корзину</button>
+						</li>
+						<li>
+							<a href="#" class="title">Kingston microSDHC 16Gb class10+SD (SDC10/16GB)</a> <span class="price">990 руб</span>
+							<button class="btn blue">В корзину</button>
+						</li>
+						<li>
+							<a href="#" class="title">Kingston microSDHC 16Gb class10+SD (SDC10/16GB)</a> <span class="price">990 руб</span>
+							<button class="btn blue">В корзину</button>
+						</li>
+						<li>
+							<a href="#" class="title">Kingston microSDHC 16Gb class10+SD (SDC10/16GB)</a> <span class="price">990 руб</span>
+							<button class="btn blue">В корзину</button>
+						</li>
+					</ol>
+				</div>
 				<div class="promo-code">
-					<span>Промо-код</span>
+					<span>
+						Промо-код
+						<span class="promo-question"></span>
+					</span>
 					<input type="text"/>
+					<button class="promo-apply">Применить</button>
+				</div>
+					<div class="promo-form">
+					<div class="promo-form-section">
+						<div class="form-field">
+							<label>ФИО<sup>*</sup></label>
+							<div class="control-field"><input type="text"/></div>
+
+						</div>
+						<div class="form-field">
+							<label>Номер телефона<sup>*</sup></label>
+							<div class="control-field"><input type="text"/></div>
+
+						</div>
+						<div class="form-field">
+							<label>Адрес<sup>*</sup></label>
+							<div class="control-field">
+								<textarea name="" cols="30" rows="10"></textarea>
+								<div class="form-field-tooltip">
+									Адрес д оставки
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<div class="promo-form-section">
+						<div class="form-field">
+							<label>E-mail<sup>*</sup></label>
+							<div class="control-field"><input type="email"/></div>
+
+						</div>
+						<div class="form-field">
+							<label>Примечание<sup>*</sup></label>
+							<div class="control-field"><textarea name="" cols="30" rows="10"></textarea></div>
+
+						</div>
+					</div>
+				</div>
+				<div class="payment-delivery-section">
+					<div class="mb20 cf">
+						<div class="title">Способ оплаты</div>
+						<div class="container">
+							<label class="radio">
+								<input type="radio" name="pay"/>
+								<span class="tooltip-info">
+									Экономия <br />
+									ххх руб.
+								</span>
+								Предоплата 100%
+							</label>
+							<p>Товар отправляется по 100% предоплате, при получении заказа ничего доплачивать не придется. Доставка производится Почтой России бандеролью 1 класса с описью. Примерный срок доставки по РФ 7 дней.оставки </p>
+
+							<label class="radio">
+								<input type="radio" name="pay"/>
+								Наложенный платеж
+							</label>
+							<p>
+								Вы оплачиваете свой заказ при получении (+ около 3% сверху возьмет почта за отправку нам денежного перевода). Доставка производится Почтой России бандеролью 1 класса с описью. Примерный срок доставки по РФ 7 дней.оставки
+							</p>
+						</div>
+					</div>
+					<div class="mb20 cf">
+						<div class="title">Способ доставки</div>
+						<div class="container">
+							<label class="radio">
+								<input type="radio" name="delivery"/>
+								<span class="tooltip-info">
+									<span>Стоимость доставки</span>
+									500.00 руб.
+								</span>
+								Почтой России 1 классом
+							</label>
+							<p>Ваш заказ будет доставлен Почтой России 1 классом (авиа). </p>
+							<label class="radio">
+								<input type="radio" name="delivery"/>
+								<span class="tooltip-info">
+									<span>Стоимость доставки</span>
+									500.00 руб.
+								</span>
+								Курьерская доставка EMS
+							</label>
+							<p>Ваш заказ будет доставлен в короткие сроки, после того, как посылка придет в Ваш город, с Вами созвонится курьер и привезет заказ в удобное для Вас время. </p>
+						</div>
+					</div>
+				</div>
+				<div class="basket-total-total">
+					<div>Общая сумма с учетом доставки</div>
+					<div class="cf">
+						<div class="total-amount-price">
+							19 400.00
+						</div>
+					</div>
+				</div>
+				<div class="confirm-order">
+					<button>Подтвердить заказ</button>
 				</div>
 				<div class="basket-mobile-buttons">
 					<div class="cf">

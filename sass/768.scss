@@ -313,12 +313,61 @@
 .price,
 .amount,
 .total {
-	display: block;
+	display: table-cell;
 }
 .amount-mobile,
-.price-mobile{
+.price-mobile,
+.basket-mobile-buttons{
 	display: none;
 }
 .basket {
 	margin:0;
+	.promo-code {
+		background: #f6f7f8;
+		padding:20px;
+
+		> span {
+			float:left;
+			width:auto;
+			margin-right: 30px;
+			position: relative;
+			padding-right: 20px;
+		}
+		input {
+			float:left;
+			width:auto;
+		}
+	}
+}
+.promo-question, .promo-apply {
+	display: block;
+}
+.promo-form {
+	display: block;
+	@extend .cf;
+	.promo-form-section {
+		width:48%;
+		&:first-child {
+			float:left;
+		}
+		&:last-child {
+			float:right;
+		}
+		.form-field {
+			.control-field {
+				.form-field-tooltip {
+					right:-60px;
+				}
+			}
+		}
+	}
+}
+.following-items {
+	padding:0;
+	display: block;
+}
+.payment-delivery-section,
+.basket-total-total,
+.confirm-order{
+	display: block;
 }

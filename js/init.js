@@ -8,6 +8,9 @@ $(document).ready(function () {
 	toggleShowMobile();
 	scrollTopFunction();
 	basketPage();
+	headerCartCountPrice();
+	popup();
+	callBack();
 });
 
 $(window).resize(function () {
@@ -209,5 +212,62 @@ scrollTopFunction = function () {
 basketPage = function(){
 	$('td.close').find('button').on('click', function(){
 		$(this).parents('tr').remove();
+	});
+}
+
+headerCartCountPrice = function(){
+	$('.popup-cart-table').find('.count').find('.min-js').on('click', function(event){
+		var row = $(event.target).parent();
+		reduceItems(row);
+	});
+
+	$('.popup-cart-table').find('.count').find('.plus-js').on('click', function(event){
+		var row = $(event.target).parent();
+		increaseItems(row);
+	});
+
+
+	$('.basket').find('.input-count').find('.min').on('click', function(event){
+		var row = $(event.target).parent();
+		reduceItems(row);
+	});
+
+	$('.basket').find('.input-count').find('.up').on('click', function(event){
+		var row = $(event.target).parent();
+		increaseItems(row);
+	});
+
+	var reduceItems = function(el){
+
+		var input = el.parent().find('input');
+		var amount = parseInt(input.val());
+		if (amount > 1) {
+			amount = --amount;
+			input.val(amount);
+			recountPrice(amount, el);
+		}
+	}
+
+	var increaseItems = function(el){
+		var input = el.parent().find('input');
+		var amount = parseInt(input.val());
+		if (amount > 0) {
+			amount = ++amount;
+			input.val(amount);
+			recountPrice(amount, el);
+		}
+	}
+	var recountPrice = function(itemsCount, el){
+		var totalPrice = parseInt(el.parents('tr').find('td.price').find('strong').text())*itemsCount;
+		el.parents('tr').find('.total').find('strong').text(totalPrice);
+	}
+}
+
+callBack = function(){
+	$('.call-back').find('.text').on('click', function(event){
+		event.preventDefault();
+		event.stopPropagation();
+		$('.call-back-box').fadeIn();
+		$('.overlay').first().fadeIn();
 	})
 }

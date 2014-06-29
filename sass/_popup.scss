@@ -5,7 +5,8 @@
 	height:100%;
 	top:0;
 	left:0;
-	background: rgba(0,0,0, .1);
+	background: rgba(0,0,0, .45);
+	display: none;
 
 }
 .popup {
@@ -13,4 +14,72 @@
 	left:50%;
 	position: fixed;
 	z-index: 21;
+	display: none;
+}
+
+.call-back-box {
+	width:400px;
+	margin-left: -200px;
+	margin-top:-200px;
+	text-align: center;
+	.close {
+		background: none;
+		border:none;
+		position: absolute;
+		right: -16px;
+		top: -12px;
+	}
+	.heading {
+		height:40px;
+		line-height: 40px;
+		font-family: helveticaneuecyrbold;
+		color:#fff;
+		font-style: 14px;
+		text-transform: uppercase;
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px ;
+		background: #05cfff;
+		@include filter-gradient(#05cfff, #2fabfc, vertical);
+		$experimental-support-for-svg: true;
+		@include background-image(linear-gradient(top, #05cfff 0%, #2fabfc 100%));
+		padding:0 15px;
+		margin:0;
+	}
+	.content {
+		border-bottom-left-radius: 5px;
+		border-bottom-right-radius: 5px ;
+		background: #fff;
+		padding:15px;
+	}
+	.telephone-picture {
+		margin-bottom: 10px;
+		img {
+			display: inline-block;
+		}
+	}
+	p {
+		font-style: 14px;
+		font-family: helveticaneuecyrroman  ;
+	}
+	input[type='text'] {
+		margin:0 auto;
+		width:280px;
+
+	}
+	.call-back-input {
+		input {
+			box-shadow:0 1px 4px rgba(0,0,0, .2) inset;
+			&:focus {
+				box-shadow: none;
+			}
+		}
+		button.blue {
+			height:30px;
+			line-height: 30px;
+			padding:0 20px;
+			color:#fff;
+			border:none;
+			margin-top:20px;
+		}
+	}
 }

@@ -67,12 +67,16 @@
 		max-height: 320px;
 		&:hover {
 			border-color:#67b9d7;
+			box-shadow: 0 0 16px rgba(0,0,0, .2);
 			z-index: 5;
 			.description,
 			.add-to-cart,
 			.zoom,
 			.video {
 				display: block;
+			}
+			.description {
+				box-shadow: 0 8px 16px rgba(0,0,0, .2);
 			}
 		}
 		.preview {
@@ -344,7 +348,11 @@ td.total {
 }
 .promo-form {
 	display: block;
-	@extend .cf;
+	&:after {
+		content:"";
+		clear:both;
+		display: table;
+	}
 	.promo-form-section {
 		width:48%;
 		&:first-child {

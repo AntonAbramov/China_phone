@@ -283,12 +283,13 @@
 .tovar-carusel {
 	.tovar-carusel-item {
 		&:hover {
-			height: 310px;
-			width: 160px;
-			margin: -10px;
-			padding: 30px 20px;
-			border: 1px solid #67b9d7;
-			box-shadow: 0 0 0 1px #67b9d7;
+//			height: 310px;
+//			width: 160px;
+//			margin: -10px;
+//			padding: 30px 20px;
+			padding: 20px;
+			border: 2px solid #67b9d7;
+			box-shadow: 0 0 16px rgba(0,0,0,0.2);
 			.add-to-cart {
 				display: block;
 			}

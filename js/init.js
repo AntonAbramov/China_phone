@@ -11,6 +11,7 @@ $(document).ready(function () {
 	headerCartCountPrice();
 	popup();
 	callBack();
+	triggerClickLabel();
 });
 
 $(window).resize(function () {
@@ -87,6 +88,7 @@ var cart = function () {
 			event.stopPropagation();
 			$(this).parents('tr').next().remove();
 			$(this).parents('tr').remove();
+			headerCartCountPrice();
 		})
 	}
 }
@@ -237,7 +239,7 @@ headerCartCountPrice = function(){
 		increaseItems(row);
 	});
 
-	var reduceItems = function(el){
+	this.reduceItems = function(el){
 
 		var input = el.parent().find('input');
 		var amount = parseInt(input.val());
@@ -248,7 +250,7 @@ headerCartCountPrice = function(){
 		}
 	}
 
-	var increaseItems = function(el){
+	this.increaseItems = function(el){
 		var input = el.parent().find('input');
 		var amount = parseInt(input.val());
 		if (amount > 0) {
@@ -257,9 +259,20 @@ headerCartCountPrice = function(){
 			recountPrice(amount, el);
 		}
 	}
-	var recountPrice = function(itemsCount, el){
+	this.totalAmount = function(){
+
+		var x = 0;
+		$('.cart tbody').find('.total').each(function(){
+			x +=parseInt($(this).find('strong').text());
+		});
+		return x;
+	}
+	$('.cart .basket-total-js').text(totalAmount());
+	this.recountPrice = function(itemsCount, el){
 		var totalPrice = parseInt(el.parents('tr').find('td.price').find('strong').text())*itemsCount;
 		el.parents('tr').find('.total').find('strong').text(totalPrice);
+		$('.cart .basket-total-js').text(totalAmount());
+
 	}
 }
 
@@ -269,5 +282,11 @@ callBack = function(){
 		event.stopPropagation();
 		$('.call-back-box').fadeIn();
 		$('.overlay').first().fadeIn();
+	})
+}
+
+triggerClickLabel = function() {
+	$('.payment-delivery-section').find('.container').find('p').on('click', function(){
+		$(this).prev().click();
 	})
 }

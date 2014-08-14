@@ -113,22 +113,22 @@
 			.amount {
 				display: block;
 				border-radius: 20px;
-				color:#000;
+				color: #000;
 				font-size: 12px;
-				line-height: 12px;
-				padding:2px;
-				min-width: 14px;
+				line-height: 20px;
+				padding: 0;
+				min-width: 20px;
+				height: 20px;
 				text-align: center;
 				position: absolute;
-				top:-4px;
+				top: -10px;
 				font-family: helveticaneuecyrbold;
-				right:-4px;
+				right: -6px;
 				font-weight: bold;
 				z-index: 2;
 				text-indent: 0;
 				background: #ffcc00;
 				font-style: normal;
-				padding-left: 4px;
 			}
 		}
 		.cart-count-items {
@@ -211,6 +211,14 @@
 						@include filter-gradient(#e5ebeb, #e6ebeb, vertical);
 						$experimental-support-for-svg: true;
 						@include background-image(linear-gradient(top,  #e5ebeb 0%,#f7fbfb 95%,#e6ebeb 100%));
+						&:hover, &:focus {
+							@include filter-gradient( #e6ebeb, #e5ebeb, vertical);
+							$experimental-support-for-svg: true;
+							@include background-image(linear-gradient(top, #f7fbfb 0%, #e5ebeb 95%,#e6ebeb 100%));
+						}
+						&:active {
+							background: #e6ebeb;
+						}
 					}
 					&.order {
 						font-family: helveticaneuecyrbold;
@@ -219,6 +227,15 @@
 						@include filter-gradient(#00d3ff, #30abfc, vertical);
 						$experimental-support-for-svg: true;
 						@include background-image(linear-gradient(top,  #00d3ff 0%,#30abfc 100%));
+						@include transition(none);
+						&:hover, &:focus {
+							@include filter-gradient( #30abfc, #00d3ff, vertical);
+							$experimental-support-for-svg: true;
+							@include background-image(linear-gradient(top, #30abfc 0%,#00d3ff 100%));
+						}
+						&:active {
+							background: #30abfc;
+						}
 					}
 				}
 

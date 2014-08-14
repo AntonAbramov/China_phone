@@ -1448,15 +1448,24 @@ input[type='password'] {
 			padding-right: 5px;
 			font-family: helveticaneuecyrbold;
 		}
-		&.show-all-links {
-			background: none;
-			a {
-				color: #2facfc;
-			}
+
+	}
+}
+.technical-info-block {
+	.additional-info {
+		display: none;
+	}
+	&.active {
+		.additional-info {
+			display: block;
 		}
 	}
 }
-
+.show-all-links {
+	a {
+		color: #2facfc;
+	}
+}
 .technical-option li span:first-child + span {
 	float: right;
 	display: block;
@@ -2123,4 +2132,10 @@ td.total {
 		line-height: 24px;
 		margin-bottom: 20px;
 	}
+}
+.icons-star-none {
+	@include transition(none);
+}
+.icons-star-none:hover {
+	@include icons-sprite(star);
 }

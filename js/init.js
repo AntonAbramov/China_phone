@@ -12,6 +12,8 @@ $(document).ready(function () {
 	popup();
 	callBack();
 	triggerClickLabel();
+	trigerShowOption();
+	tovarAddFeedBack();
 });
 
 $(window).resize(function () {
@@ -289,4 +291,20 @@ triggerClickLabel = function() {
 	$('.payment-delivery-section').find('.container').find('p').on('click', function(){
 		$(this).prev().click();
 	})
+}
+trigerShowOption = function () {
+	$('.show-all-links').on('click', function(event){
+		event.preventDefault();
+		$(this).parents('.technical-info-block').toggleClass("active");
+	});
+}
+
+var tovarAddFeedBack = function(){
+	var ofsetTop = $('.form-feedback').offset().top;
+	$('.add-feedback').on('click', function(e) {
+		e.preventDefault();
+		$("html, body").animate({
+			scrollTop: ofsetTop
+		}, 600);
+	});
 }

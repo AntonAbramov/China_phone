@@ -15,6 +15,7 @@ $(document).ready(function () {
   trigerShowOption();
   tovarAddFeedBack();
   fancybox();
+  seachLogic();
 });
 
 $(window).resize(function () {
@@ -330,3 +331,14 @@ var fancybox = function () {
 }
 
 
+seachLogic = function(){
+  $("#search").keypress(function(){
+     $(".search-popover").show();
+  });
+  // клик вне области окна что бы закрыть само окно.
+  $(document).click(function(event) {
+      if ($(event.target).closest(".search-popover").length) return;
+      $(".search-popover").hide();
+      event.stopPropagation();
+  });
+}

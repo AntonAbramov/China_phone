@@ -302,13 +302,17 @@ trigerShowOption = function () {
 }
 
 var tovarAddFeedBack = function () {
-  var ofsetTop = $('.form-feedback').offset().top;
-  $('.add-feedback').on('click', function (e) {
-    e.preventDefault();
-    $("html, body").animate({
-      scrollTop: ofsetTop
-    }, 600);
-  });
+  if($('.form-feedback').length) {
+    var ofsetTop = $('.form-feedback').offset().top;
+    $('.add-feedback').on('click', function (e) {
+      e.preventDefault();
+      $("html, body").animate({
+        scrollTop: ofsetTop
+      }, 600);
+    });
+  }
+
+
 }
 
 var fancybox = function () {

@@ -585,6 +585,13 @@ input[type='password'] {
 	display: none;
 	float: left;
 	width: 264px;
+	&.stick {
+		position: fixed;
+		left:50%;
+		margin-left: -481px;
+		z-index: 9999;
+		top:0;
+	}
 }
 
 .banner-side {
@@ -1392,7 +1399,7 @@ input[type='password'] {
 
 	position: relative;
 	margin-bottom: 40px;
-	h3 {
+	h3, h2 {
 		font-size: 24px;
 		color: #000;
 	}

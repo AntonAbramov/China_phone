@@ -16,6 +16,7 @@ $(document).ready(function () {
   tovarAddFeedBack();
   fancybox();
   seachLogic();
+  tovarLogicPage();
 });
 
 $(window).resize(function () {
@@ -281,7 +282,7 @@ headerCartCountPrice = function () {
 }
 
 callBack = function () {
-  $('.call-back').find('.text').on('click', function (event) {
+  $('.call-back').find('.text, .icons-tel').on('click', function (event) {
     event.preventDefault();
     event.stopPropagation();
     $('.call-back-box').fadeIn();
@@ -306,7 +307,7 @@ var tovarAddFeedBack = function () {
     var ofsetTop = $('.form-feedback').offset().top;
     $('.add-feedback').on('click', function (e) {
       e.preventDefault();
-      $("html, body").animate({
+        $("html, body").animate({
         scrollTop: ofsetTop
       }, 600);
     });
@@ -345,4 +346,36 @@ seachLogic = function(){
       $(".search-popover").hide();
       event.stopPropagation();
   });
+}
+tovarLogicPage = function(){
+  if ($('.side-navigation').length) {
+    if ($(window).width() >= 768) {
+      var leftSideBar = $('.left-sidebar');
+      var positionSideBar = leftSideBar.offset().top
+      $(window).scroll(function () {
+      if ($(this).scrollTop() > positionSideBar) {
+          leftSideBar.addClass('stick');
+        } else {
+          leftSideBar.removeClass('stick');
+        }
+      });
+
+      $('.side-navigation').find('a').on('click', function(e){
+        e.preventDefault();
+        var section = $(this).attr('title');
+        var i = $('h2:contains('+ section + ')');
+        if (i.length) {
+          ofsetTop = i.offset().top;
+        }
+        else {
+
+        }
+         $("html, body").animate({
+          scrollTop: ofsetTop
+        }, 600);
+
+      })
+    }
+
+  }
 }
